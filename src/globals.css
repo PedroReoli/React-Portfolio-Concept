@@ -1,6 +1,14 @@
 /* Importação de Fontes */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
+/* ===============================
+    Body Styles 
+   =============================== */
+:root {
+  --lgreen:#C6F602 ;
+  --dgreen: #99ca06;
+  --newblack:#111111;
+}
 /* Reset CSS */
 * {
   box-sizing: border-box;
@@ -10,7 +18,9 @@
 
 
 
-/* Body Styles */
+/* ===============================
+    Body Styles 
+   =============================== */
 body {
   font-family: 'Inter', sans-serif;
   background-color: #ffffff; /* Cor de fundo principal */
@@ -18,79 +28,125 @@ body {
   line-height: 1.6;
 }
 
-/* Container Principal */
+/* ===============================
+    Container Principal 
+   =============================== */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Links */
+/* ===============================
+    Links 
+   =============================== */
 a {
-  color: #C6F602; /* Cor padrão dos links */
+  color: var(--lgreen); /* Cor padrão dos links */
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #99ca06 ;
+  color: var(--dgreen) ;
 }
 
-/* Títulos */
+/* ===============================
+    Titulos 
+   =============================== */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
 }
 
+/* ===============================
+    Home
+   =============================== */
+.home-text-container {
+  
+  /* background-color: #f0f0f0; */
+  position: absolute;
+  left: 12%; /* Move o container para o centro horizontal */
+  top: 40%; /* Move o container para o centro vertical */
+  transform: translate(-50%, -50%); /* Corrige o deslocamento causado pela metade da largura e altura do próprio elemento */
+  transform:scale(1.5);
+  padding: 20px;
+}
+  /* teste */
+/* Estilos personalizados para os botões */
+.container-button {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+.hire-button {
+  background-color: var(--newblack); /* Cor de fundo para o botão "Me contrate" */
+  color: var(--lgreen); /* Cor do texto para o botão "Me contrate" */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hire-button:hover {
+  background-color: var(--dgreen); /* Cor de fundo ao passar o mouse sobre o botão "Me contrate" */
+}
+
+.learn-more-button {
+  background-color: var(--newblack); /* Cor de fundo para o botão "Saiba mais" */
+  color: var(--lgreen); /* Cor do texto para o botão "Saiba mais" */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.learn-more-button:hover {
+  background-color: var(--dgreen); /* Cor de fundo ao passar o mouse sobre o botão "Saiba mais" */
+}
+/* Titulos da HomePage */
+
+.h1-home{
+  font-size: 50px;  
+  letter-spacing: 5px;
+}
+.h2-home {
+  font-size: 30px;
+}
+.h3-home {
+  font-size: 18px;
+}
 
 
-
-
-/* Outras Classes Úteis */
+/* ===============================
+    Temp 
+   =============================== */
 .text-center {
   text-align: center;
 }
-/* Topbar */
+/* ===============================
+    Topbar 
+   =============================== */
+
 .topbar {
   width: 100%;
   display:flex;
   align-items: center;
   justify-content: space-between;
-  background: #111111;
+  background: var(--newblack);
   padding: 15px 7%;
 }
 .logo {
   width: 250px;
   cursor: pointer;
 }
-.search-box {
-  display: flex;
-  align-items: center;
-  background: #646363;
-  padding: 10px 20px;
-  border-radius: 50px;
-}
-.search-box input {
-  padding: 6px;
-  background:transparent;
-  border: 0;
-  outline: 0;
-  color: #fff;
-  font-size: 18px;
-  max-width: 200px;  
-}
 
-.search-box input::placeholder {
-  color: #fff;
-}
-.search-box img {
-  width: 25px;
-  cursor: pointer;
-}
+
 ul {
   flex: 1 ;
   list-style: none;
   text-align: center;
-  color:#C6F602;
+  color:var(--lgreen);
 }
 
 ul li {
