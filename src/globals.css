@@ -27,12 +27,13 @@ body {
 
 /* Links */
 a {
-  color: #007bff; /* Cor padrão dos links */
+  color: #C6F602; /* Cor padrão dos links */
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #99ca06 ;
 }
 
 /* Títulos */
@@ -91,9 +92,7 @@ ul {
   text-align: center;
   color:#C6F602;
 }
-li:hover {
-  color: #99ca06 ;
-}
+
 ul li {
     display: inline-block;
     margin: 10px 20px; 

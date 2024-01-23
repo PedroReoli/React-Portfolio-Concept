@@ -1,37 +1,28 @@
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { INavLink } from "@/types";
-import { TopbarLinks } from "@/constants";
-import { Button } from "@/components/ui/button";
+import { NavLink } from "react-router-dom";
 
 
 const Topbar = () => {
-  // const navigate = useNavigate();
-  // const { pathname } = useLocation();
+ 
+
+    // Search Bar 
+      
 
   return (
     <nav className="topbar">
         <img src="/assets/icons/logo.svg" alt="" className="logo"/>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Experiences</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-          <li>Social Medias</li>
-        </ul>     
-
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/about">About</NavLink></li>
+          <li><NavLink to="/skills">Skills</NavLink></li>
+          <li><NavLink to="/experiences">Experiences</NavLink></li>
+          <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+          <li><NavLink to="/contact">Contact</NavLink></li>
+          <li><NavLink to="/social-media">Social Medias</NavLink></li>
+      </ul>
 {/* gpt abaixo */}
         <div className="search-box">
           <input type="text" placeholder="Procurar por link"/>
           <img  src="/assets/icons/search.svg"  alt="" />
-            {/* <Button
-              variant="ghost"
-              className="shad-button_ghost"
-              onClick={() => navigate(`/profile`)}
-            >
-              <p className="small-medium lg:base-medium">Search</p>
-            </Button> */}
         </div>
 
         
