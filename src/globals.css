@@ -14,7 +14,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: #ffffff; /* Cor de fundo principal */
-  color: #333333; /* Cor do texto principal */
+  color: #000000; /* Cor do texto principal */
   line-height: 1.6;
 }
 
@@ -40,24 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
 }
 
-/* Botões */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-}
 
-.button:hover {
-  background-color: #f61a1a; /* Cor do botão ao passar o mouse */
-}
 
 
 
@@ -67,48 +50,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Topbar */
 .topbar {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  background-color: #c1baba; /* Cor de fundo da topbar */
-  color: #ffffff; /* Cor do texto da topbar */
-  padding: 15px 20px;
-  display: flex;
+  display:flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
+  background: #111111;
+  padding: 15px 7%;
 }
-
-.topbar-logo {
-  width: 150px; /* Ajuste conforme necessário */
+.logo {
+  width: 250px;
+  cursor: pointer;
 }
-
-.topbar-segment {
+.search-box {
   display: flex;
   align-items: center;
+  background: #646363;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.search-box input {
+  padding: 6px;
+  background:transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 18px;
+  max-width: 200px;  
 }
 
-.topbar-menu {
-  display: flex;
-  gap: 20px;
+.search-box input::placeholder {
+  color: #fff;
+}
+.search-box img {
+  width: 25px;
+  cursor: pointer;
+}
+ul {
+  flex: 1 ;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  text-align: center;
+  color:#C6F602;
+}
+li:hover {
+  color: #99ca06 ;
+}
+ul li {
+    display: inline-block;
+    margin: 10px 20px; 
+    font-size: 18px;
+    cursor:pointer /* Quando o cursor passa por cima,ele fica com o icone de pointer  */
 }
 
-.topbar-menu-item {
-  margin: 0;
-  
-}
-
-.topbar-link {
-  color: #ffffff; /* Cor dos links da topbar */
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.topbar-link:hover {
-  text-decoration: underline;
-}

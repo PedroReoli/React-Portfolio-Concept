@@ -5,53 +5,36 @@ import { Button } from "@/components/ui/button";
 
 
 const Topbar = () => {
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
+  // const navigate = useNavigate();
+  // const { pathname } = useLocation();
 
   return (
     <nav className="topbar">
-      <div className="topbar-menu flex gap-6">
-        <Link to="/" className="flex gap-3 items-center">
-          <img
-            src="/assets/icons/logo-form.svg"
-            alt="logo"
-            width={250}
-            height={36}
-          />
-        </Link>
+        <img src="/assets/icons/logo.svg" alt="" className="logo"/>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Skills</li>
+          <li>Experiences</li>
+          <li>Portfolio</li>
+          <li>Contact</li>
+          <li>Social Medias</li>
+        </ul>     
 
-        <ul className="topbar-menu flex gap-6">
-          {TopbarLinks.map((link: INavLink) => {
-            const isActive = pathname === link.route;
+{/* gpt abaixo */}
+        <div className="search-box">
+          <input type="text" placeholder="Procurar por link"/>
+          <img  src="/assets/icons/search.svg"  alt="" />
+            {/* <Button
+              variant="ghost"
+              className="shad-button_ghost"
+              onClick={() => navigate(`/profile`)}
+            >
+              <p className="small-medium lg:base-medium">Search</p>
+            </Button> */}
+        </div>
 
-            return (
-              <li
-                key={link.label}
-                className={`topbar-menu-item group ${isActive && "bg-primary-500"}`}
-              >
-                <NavLink to={link.route}
-                  className="flex gap-4 items-center p-4"
-                  >
-                  <img src={link.imgURL} alt={link.label} 
-                 className={`group-hover:invert-white ${isActive && "invert-white"}`}
-                 />
-                  
-                
-                  {link.label}
-                </NavLink>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-
-      <Button
-        variant="ghost"
-        className="shad-button_ghost"
-        onClick={() => navigate(`/profile`)}
-      >
-        <p className="small-medium lg:base-medium">Profile</p>
-      </Button>
+        
     </nav>
   );
 };
