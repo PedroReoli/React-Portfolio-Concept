@@ -17,14 +17,8 @@ const Topbar = () => {
           <li><NavLink to="/experiences">Experiences</NavLink></li>
           <li><NavLink to="/portfolio">Portfolio</NavLink></li>
           <li><NavLink to="/contact">Contact</NavLink></li>
-          <li><NavLink to="/social-media">Social Medias</NavLink></li>
+          <li><NavLink to="/socialmedia">Social Medias</NavLink></li>
       </ul>
-{/* gpt abaixo */}
-        <div className="search-box">
-          <input type="text" placeholder="Procurar por link"/>
-          <img  src="/assets/icons/search.svg"  alt="" />
-        </div>
-
         
     </nav>
   );
