@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# Hi People! 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aqui é o Pedro Reis, de volta para mais uma aventura na programação, mas desta vez estou empolgado em criar meu primeiro portfolio utilizando React.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Meu Portfolio**
 
-## Expanding the ESLint configuration
+Cada dia, minha jornada na programação se torna mais emocionante e acolhedora. Com essa empolgação, surgiu a ideia de aprimorar minha presença online e apresentar meu trabalho de forma mais completa através de um portfolio. Vamos explorar juntos as tecnologias que utilizei no desenvolvimento do meu aplicativo, o **Peoplelly**.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+O **Peoplelly** é construído com as seguintes tecnologias:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **React (Vite-React):** Utilizando uma abordagem moderna para interfaces de usuário eficientes.
+- **Typescript:** Promovendo um desenvolvimento mais seguro e escalável.
+- **HTML e CSS:** Fundamentais para a estrutura e estilo do aplicativo.
+- **Bibliotecas de CSS:** Tailwind e Shadcn, garantindo uma estilização eficaz e moderna.
