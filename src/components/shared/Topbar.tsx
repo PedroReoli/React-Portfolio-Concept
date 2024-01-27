@@ -13,11 +13,8 @@ const Topbar = () => {
         <ul>
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/skills">Skills</NavLink></li>
-          <li><NavLink to="/experiences">Experiences</NavLink></li>
           <li><NavLink to="/portfolio">Portfolio</NavLink></li>
           <li><NavLink to="/contact">Contact</NavLink></li>
-          <li><NavLink to="/socialmedia">Social Medias</NavLink></li>
       </ul>
         
     </nav>
@@ -32,3 +29,6 @@ export default Topbar;
 // classe de fundo (bg-primary-500) aos links ativos. O código usa um loop (map) para gerar dinamicamente os itens da barra 
 // com base nas configurações fornecidas na matriz TopbarLinks, onde cada item contém informações sobre a imagem, a rota e 
 // o rótulo do link.
+
+// Em breve terei Social Medias sobre Desenvolvimento 
+// {/* <li><NavLink to="/socialmedia">Social Medias</NavLink></li> */}

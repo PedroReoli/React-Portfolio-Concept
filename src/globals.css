@@ -17,7 +17,6 @@
 }
 
 
-
 /* ===============================
     Body Styles 
    =============================== */
@@ -26,6 +25,8 @@ body {
   background-color: #ffffff; /* Cor de fundo principal */
   color: #000000; /* Cor do texto principal */
   line-height: 1.6;
+  /* background-image: url('/assets/icons/background.svg'); */
+
 }
 
 /* ===============================
@@ -51,21 +52,37 @@ a:hover {
 }
 
 /* ===============================
-    Titulos 
+    Heading Tags
    =============================== */
+   /* Geral  */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
 }
+
+
+/* Especificas */
+
+.h1-h{
+  font-size: 50px;  
+  letter-spacing: 5px;
+}
+.h2-h{
+  font-size: 30px;
+}
+.h3-h{
+  font-size: 18px;
+}
+
 
 /* ===============================
     Home
    =============================== */
 .home-text-container {
   
-  /* background-color: #f0f0f0; */
+  /* background-color: #f0f0f0; */ /* teste para ver   */
   position: absolute;
   left: 12%; /* Move o container para o centro horizontal */
-  top: 40%; /* Move o container para o centro vertical */
+  top: 38%; /* Move o container para o centro vertical */
   transform: translate(-50%, -50%); /* Corrige o deslocamento causado pela metade da largura e altura do próprio elemento */
   transform:scale(1.5);
   padding: 20px;
@@ -77,13 +94,13 @@ h1, h2, h3, h4, h5, h6 {
   gap: 10px; /* Espaçamento entre os botões */
 }
 
-.hire-button {
+.h-button {
   background-color: var(--newblack); /* Cor de fundo para o botão "Me contrate" */
   color: var(--lgreen); /* Cor do texto para o botão "Me contrate" */
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -104,19 +121,6 @@ h1, h2, h3, h4, h5, h6 {
 .learn-more-button:hover {
   background-color: var(--dgreen); /* Cor de fundo ao passar o mouse sobre o botão "Saiba mais" */
 }
-/* Titulos da HomePage */
-
-.h1-home{
-  font-size: 50px;  
-  letter-spacing: 5px;
-}
-.h2-home {
-  font-size: 30px;
-}
-.h3-home {
-  font-size: 18px;
-}
-
 
 /* ===============================
     Temp 
@@ -136,6 +140,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--newblack);
   padding: 15px 7%;
 }
+
 .logo {
   width: 250px;
   cursor: pointer;
@@ -152,7 +157,99 @@ ul {
 ul li {
     display: inline-block;
     margin: 10px 20px; 
-    font-size: 18px;
+    font-size: 20px;
     cursor:pointer /* Quando o cursor passa por cima,ele fica com o icone de pointer  */
 }
 
+/* media */
+
+
+/* ===============================
+    About
+   =============================== */
+
+   .about-text-container {
+    /* background-color: #f0f0f0; */
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    transform: scale(1.5);
+    padding: 20px;
+    max-width: 400px; /* Defina o valor máximo desejado */
+    overflow: hidden;
+  }
+  /* Section Buttons */
+  
+  .section-buttons {
+    display: flex;
+  }
+  
+  .section-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* Estilo da linha que aparece ao passar o mouse */
+  
+  .section-button:hover {
+    color: var(--dgreen);
+  }
+  
+  .section-button:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--dgreen);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  /* Estilo quando o botão está ativo */
+  
+  .section-button.active {
+    color: var(--dgreen);
+  }
+  
+  .section-button.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--dgreen);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .h-section {
+    margin-top: 25px;
+  }
+  
+  .section-content {
+    margin-top: 25px;
+  }
+  
+  .section-text {
+    opacity: 0.8;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+  .section-text p {
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.8;
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+  
