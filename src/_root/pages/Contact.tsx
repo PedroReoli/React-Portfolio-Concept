@@ -25,9 +25,8 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <h2 className="h2-h">Contato</h2>
+        <p className='p-contact'>Entre em contato através do formulario ao lado</p>
       <div className="contact-info">
-        <p className='p-contact'>Entre em contato conosco através do formulário abaixo ou através das redes sociais:</p>
-
         {/* Formulário de Contato */}
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-group">
