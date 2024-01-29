@@ -1,23 +1,79 @@
-
+// Portfolio.tsx
 const Portfolio = () => {
   const projects = [
     {
       title: 'Projeto 1',
       description: 'Descrição do Projeto 1...',
       technologies: ['React', 'Node.js'],
-      image: 'public/images/project1.jpg',
+      image: '/images/project1.jpg',
       link: 'https://example.com/project1',
     },
     {
       title: 'Projeto 2',
       description: 'Descrição do Projeto 2...',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      image: 'public/images/project2.jpg',
+      image: '/images/project2.jpg',
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Projeto 2',
+      description: 'Descrição do Projeto 2...',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      image: '/images/project2.jpg',
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Projeto 2',
+      description: 'Descrição do Projeto 2...',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      image: '/images/project2.jpg',
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Projeto 2',
+      description: 'Descrição do Projeto 2...',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      image: '/images/project2.jpg',
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Projeto 2',
+      description: 'Descrição do Projeto 2...',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      image: '/images/project2.jpg',
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Projeto 2',
+      description: 'Descrição do Projeto 2...',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      image: '/images/project2.jpg',
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Projeto 2',
+      description: 'Descrição do Projeto 2...',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      image: '/images/project2.jpg',
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Projeto 2',
+      description: 'Descrição do Projeto 2...',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      image: '/images/project2.jpg',
+      link: 'https://example.com/project2',
+    },
+    {
+      title: 'Projeto 2',
+      description: 'Descrição do Projeto 2...',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      image: '/images/project2.jpg',
       link: 'https://example.com/project2',
     },
     // Adicione mais projetos conforme necessário
   ];
-  
+
   return (
     <div className="portfolio-container">
       <h2 className="h2-h">Portfolio</h2>

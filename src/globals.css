@@ -6,8 +6,9 @@
    =============================== */
 :root {
   --lgreen:#C6F602 ;
-  --dgreen: #99ca06;
-  --newblack:#111111;
+  --dgreen: #99ca06 ;
+  --newblack:#111111 ;
+  --newgray:#333333 ;
 }
 /* Reset CSS */
 * {
@@ -104,8 +105,9 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-.hire-button:hover {
-  background-color: var(--dgreen); /* Cor de fundo ao passar o mouse sobre o botão "Me contrate" */
+.h-button:hover {
+  background-color: var(--newgray); /* Cor de fundo ao passar o mouse sobre o botão "Me contrate" */
+
 }
 
 .learn-more-button {
@@ -172,7 +174,7 @@ ul li {
     /* background-color: #f0f0f0; */
     position: absolute;
     right: 20%;
-    top: 40%;
+    top: 38%;
     transform: translate(-50%, -50%);
     transform: scale(1.5);
     padding: 20px;
@@ -273,26 +275,31 @@ ul li {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 15px; /* Distancia Vertical */
 }
 
 .project-card {
   position: relative;
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
+  margin-top: 55px;
+  width: 350px;
+  height: 600px;
+  
 }
 
 .project-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .project-card img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
+  padding-top: 30%;
 }
 
 .project-card h3 {
@@ -315,7 +322,7 @@ ul li {
 }
 
 .project-card a:hover {
-  background-color: #333333;
+  background-color: var(--newgray);
 }
 
 .project-image {
@@ -331,6 +338,7 @@ ul li {
   width: 100%;
   height: 100%;
   padding: 20px;
+  padding-top: 38%;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.8);
   opacity: 0;
@@ -339,3 +347,105 @@ ul li {
 .project-card:hover .project-details {
   opacity: 1;
 }
+/* ===============================
+    Contato
+   =============================== */
+   .contact-container {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .h2-h {
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 13%;
+    top: 38%;
+    transform: translate(-50%, -50%);
+    transform: scale(1.5);
+    padding: 20px;
+    max-width: 400px; /* Defina o valor máximo desejado */
+    overflow: hidden;
+
+  }
+  .p-contact {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 8%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    transform: scale(1.5);
+    padding: 20px;
+    max-width: 400px; /* Defina o valor máximo desejado */
+    overflow: hidden;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+    padding-top: 100px;
+    
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+      }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  .input-field,
+  .message-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  .message-input {
+    height: 150px; 
+    width: 600px;
+    resize: none; /*  Tira o redimensionador */
+  }
+  
+  button {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555555;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    font-size: 40px;
+    color: #333333;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+    
+  
+  .social-icon:hover {
+    color: #555555;
+  }

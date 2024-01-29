@@ -1,4 +1,4 @@
-
+// RootLayout.tsx
 import Topbar from "@/components/shared/Topbar";
 
 import { Outlet } from "react-router-dom";

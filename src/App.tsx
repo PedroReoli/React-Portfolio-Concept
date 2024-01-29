@@ -3,7 +3,6 @@ import Home from "@/_root/pages/Home";
 import About from "@/_root/pages/About";
 import Portfolio from "@/_root/pages/Portfolio";
 import Contact from "@/_root/pages/Contact";
-import SocialMedias from "@/_root/pages/SocialMedias";
 import { Routes,Route } from 'react-router-dom';
 import './globals.css'
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
             <Route path="about" element={<About />} />
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="socialmedia" element={<SocialMedias />} />
            </Route>
         </Routes>
        
