@@ -7,8 +7,11 @@
 :root {
   --lgreen:#C6F602 ;
   --dgreen: #99ca06 ;
-  --newblack:#111111 ;
-  --newgray:#333333 ;
+  --newpurple:#33245f ;
+  --backgroundblack:#090e16;
+  --topbarblack:#0f1120;
+  --contrast: #4E3A76;
+
 }
 /* Reset CSS */
 * {
@@ -22,11 +25,14 @@
     Body Styles 
    =============================== */
 body {
+
   font-family: 'Inter', sans-serif;
-  background-color: #ffffff; /* Cor de fundo principal */
-  color: #000000; /* Cor do texto principal */
+
+  
+  background-color: var(--backgroundblack); /* Cor de fundo principal */
+  color: #ffffff; /* Cor do texto principal */
   line-height: 1.6;
-  /* background-image: url('/assets/icons/background.svg'); */
+  
 
 }
 
@@ -88,6 +94,10 @@ h1, h2, h3, h4, h5, h6 {
   transform:scale(1.5);
   padding: 20px;
 }
+.h2-h {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
   /* teste */
 /* Estilos personalizados para os botões */
 .container-button {
@@ -96,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h-button {
-  background-color: var(--newblack); /* Cor de fundo para o botão "Me contrate" */
+  background-color: var(--newpurple); /* Cor de fundo para o botão "Me contrate" */
   color: var(--lgreen); /* Cor do texto para o botão "Me contrate" */
   padding: 10px 20px;
   font-size: 16px;
@@ -106,12 +116,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h-button:hover {
-  background-color: var(--newgray); /* Cor de fundo ao passar o mouse sobre o botão "Me contrate" */
+  background-color: var(--contrast); /* Cor de fundo ao passar o mouse sobre o botão "Me contrate" */
 
 }
 
 .learn-more-button {
-  background-color: var(--newblack); /* Cor de fundo para o botão "Saiba mais" */
+  background-color: var(--newpurple); /* Cor de fundo para o botão "Saiba mais" */
   color: var(--lgreen); /* Cor do texto para o botão "Saiba mais" */
   padding: 10px 20px;
   font-size: 16px;
@@ -124,6 +134,43 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--dgreen); /* Cor de fundo ao passar o mouse sobre o botão "Saiba mais" */
 }
 
+.home-circle-container {
+  position: absolute;
+  left: 65%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-circle {
+  width: 530px;
+  height: 630px;
+  border-radius: 50%;
+  background-color: #f00;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tech-icons img {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+}
 /* ===============================
     Temp 
    =============================== */
@@ -139,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
   display:flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--newblack);
+  background: var(--topbarblack);
   padding: 15px 7%;
 }
 
@@ -159,22 +206,25 @@ ul {
 ul li {
     display: inline-block;
     margin: 10px 20px; 
-    font-size: 20px;
+    font-size: 25px;
     cursor:pointer /* Quando o cursor passa por cima,ele fica com o icone de pointer  */
 }
 
 /* media */
 
-
 /* ===============================
     About
    =============================== */
+   .about-container {
+    display: flex;
+  }
+  
 
    .about-text-container {
     /* background-color: #f0f0f0; */
     position: absolute;
     right: 20%;
-    top: 38%;
+    top: 35%;
     transform: translate(-50%, -50%);
     transform: scale(1.5);
     padding: 20px;
@@ -187,6 +237,7 @@ ul li {
     display: flex;
   }
   
+  
   .section-button {
     background: none;
     border: none;
@@ -196,13 +247,14 @@ ul li {
     padding: 0;
     position: relative;
     text-decoration: none;
-    color: #000;
+    color: #fff;;
   }
   
   /* Estilo da linha que aparece ao passar o mouse */
   
   .section-button:hover {
     color: var(--dgreen);
+    background: none;
   }
   
   .section-button:hover::after {
@@ -235,6 +287,7 @@ ul li {
   
   .h-section {
     margin-top: 25px;
+    
   }
   
   .section-content {
@@ -254,10 +307,22 @@ ul li {
     margin-top: 15px;
     line-height: 1.5;
   }
+  .image-container {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    flex: 0 0 550px; /* Largura desejada para o container da imagem */
+    height: 88%; /* Altura desejada para o container da imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e o conteúdo de texto */
+  }
   
-
-  /* Adicione esses estilos ao seu arquivo CSS existente */
-
+  .section-image {
+    width: 100%; /* Garante que a imagem ocupa 100% da largura do container */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Adicione borda arredondada conforme necessário */
+  }
+  
 /* ===============================
     Portfolio
    =============================== */
@@ -303,18 +368,25 @@ ul li {
 }
 
 .project-card h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
 .project-card p {
   margin-bottom: 15px;
 }
-
+.p-1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.p-2 {
+  font-weight: bold;
+  color:var(--topbarblack);
+}
 .project-card a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--newblack);
+  background-color: var(--newpurple);
   color: var(--lgreen);
   text-decoration: none;
   border-radius: 20px;
@@ -322,7 +394,7 @@ ul li {
 }
 
 .project-card a:hover {
-  background-color: var(--newgray);
+  background-color: var(--contrast);
 }
 
 .project-image {
@@ -332,6 +404,8 @@ ul li {
 }
 
 .project-details {
+  color: var(--backgroundblack);
+  font-size: 18px;
   position: absolute;
   top: 0;
   left: 0;
@@ -340,7 +414,7 @@ ul li {
   padding: 20px;
   padding-top: 38%;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.761);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -348,14 +422,14 @@ ul li {
   opacity: 1;
 }
 /* ===============================
-    Contato
+    SocialMedias
    =============================== */
    .contact-container {
     padding: 40px 20px;
     text-align: center;
   }
   
-  .h2-h {
+  .h2-c {
     font-size: 36px;
     margin-bottom: 20px;
     position: absolute;
@@ -369,14 +443,15 @@ ul li {
 
   }
   .p-contact {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 20px;
     position: absolute;
     left: 8%;
     top: 48%;
-    padding: 20px;
-    max-width: 400px; /* Defina o valor máximo desejado */
+    padding-top: 10px;
+    max-width: 550px; /* Defina o valor máximo desejado */
     overflow: hidden;
+    text-align: justify;
   }
   
   .contact-info {
@@ -400,7 +475,7 @@ ul li {
   label {
     display: block;
     margin-bottom: 8px;
-    font-size: 18px;
+    font-size: 25px;
   }
   
   .input-field,
@@ -410,7 +485,7 @@ ul li {
     margin-bottom: 20px;
     font-size: 16px;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 18px;
   }
   
   .message-input {
@@ -420,7 +495,9 @@ ul li {
   }
   
   button {
-    background-color: #333333;
+    width: 300px;
+    height: 50px;
+    background-color: var(--newpurple);
     color: #fff;
     padding: 10px 20px;
     font-size: 18px;
@@ -430,7 +507,7 @@ ul li {
   }
   
   button:hover {
-    background-color: #555555;
+    background-color: var(--contrast);
   }
   
   .social-icons {
@@ -441,12 +518,38 @@ ul li {
   
   .social-icon {
     font-size: 40px;
-    color: #333333;
+    color: var(--dgreen);
     margin: 0 10px;
     text-decoration: none;
   }
-    
+  
   
   .social-icon:hover {
-    color: #555555;
+    color: var(--lgreen);
   }
+  
+.social-circle-container {
+  position: absolute;
+  left: 65%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-circle {
+  width: 530px;
+  height: 630px;
+  border-radius: 50%;
+  background-color: #f00;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

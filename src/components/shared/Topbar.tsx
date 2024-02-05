@@ -14,7 +14,7 @@ const Topbar = () => {
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
           <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
+          <li><NavLink to="/SocialMedias">Social Medias</NavLink></li>
       </ul>
         
     </nav>
