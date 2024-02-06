@@ -1,6 +1,10 @@
 /* Importação de Fontes */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* ===============================
     Body Styles 
    =============================== */
@@ -22,7 +26,7 @@
 
 
 /* ===============================
-    Body Styles 
+    Body Styles e General
    =============================== */
 body {
 
@@ -35,6 +39,48 @@ body {
   
 
 }
+b {
+  color: var(--lgreen);
+}
+
+
+
+/* ===============================
+    Topbar 
+   =============================== */
+
+   .topbar {
+    position: fixed;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--topbarblack);
+    padding: 15px 7%;
+    z-index: 1000;
+  }
+  
+  .logo {
+    width: 250px;
+    cursor: pointer;
+  }
+  
+  
+  ul {
+    flex: 1 ;
+    list-style: none;
+    text-align: center;
+    color:var(--lgreen);
+  }
+  
+  ul li {
+      display: inline-block;
+      margin: 10px 20px; 
+      font-size: 25px;
+      cursor:pointer /* Quando o cursor passa por cima,ele fica com o icone de pointer  */
+  }
+  
+
 
 /* ===============================
     Container Principal 
@@ -135,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-circle-container {
-  position: absolute;
+  position:fixed;
   left: 65%;
   top: 55%;
   transform: translate(-50%, -50%);
@@ -176,38 +222,6 @@ h1, h2, h3, h4, h5, h6 {
    =============================== */
 .text-center {
   text-align: center;
-}
-/* ===============================
-    Topbar 
-   =============================== */
-
-.topbar {
-  width: 100%;
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--topbarblack);
-  padding: 15px 7%;
-}
-
-.logo {
-  width: 250px;
-  cursor: pointer;
-}
-
-
-ul {
-  flex: 1 ;
-  list-style: none;
-  text-align: center;
-  color:var(--lgreen);
-}
-
-ul li {
-    display: inline-block;
-    margin: 10px 20px; 
-    font-size: 25px;
-    cursor:pointer /* Quando o cursor passa por cima,ele fica com o icone de pointer  */
 }
 
 /* media */
@@ -433,7 +447,7 @@ ul li {
     font-size: 36px;
     margin-bottom: 20px;
     position: absolute;
-    left: 13%;
+    left: 17%;
     top: 38%;
     transform: translate(-50%, -50%);
     transform: scale(1.5);
@@ -444,6 +458,7 @@ ul li {
   }
   .p-contact {
     font-size: 25px;
+    opacity: 0.8;
     margin-bottom: 20px;
     position: absolute;
     left: 8%;
@@ -477,23 +492,9 @@ ul li {
     margin-bottom: 8px;
     font-size: 25px;
   }
+
   
-  .input-field,
-  .message-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    box-sizing: border-box;
-    border-radius: 18px;
-  }
-  
-  .message-input {
-    height: 150px; 
-    width: 600px;
-    resize: none; /*  Tira o redimensionador */
-  }
-  
+
   button {
     width: 300px;
     height: 50px;
@@ -518,14 +519,14 @@ ul li {
   
   .social-icon {
     font-size: 40px;
-    color: var(--dgreen);
+    color: var(--contrast);
     margin: 0 10px;
     text-decoration: none;
   }
   
   
   .social-icon:hover {
-    color: var(--lgreen);
+    color: var(--dgreen);
   }
   
 .social-circle-container {

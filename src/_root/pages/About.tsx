@@ -48,8 +48,8 @@ const About = () => {
           {activeSection === 'Life' && (
             <div>
               <h2 className='h-section'>Life Section</h2>
-              <p className='section-text'>Sou um apaixonado por conhecimento, música e faz uns 3 anos que descobri a paixão pela programação.
-              Minha jornada é única, trazendo uma perspectiva especial aos projetos. A organização, o comprometimento e o hiperfoco em aprendizado são meus diferenciais.</p>
+              <p className='section-text'>Sou um apaixonado por <b>conhecimento, música</b> e faz uns 3 anos que descobri a paixão pela <b>programação</b>.
+              Minha jornada é única, trazendo uma perspectiva especial aos projetos. A <b>organização, o comprometimento e o hiperfoco</b> em aprendizado são meus diferenciais.</p>
             </div>
           )}
           {activeSection === 'Education' && (
@@ -57,16 +57,16 @@ const About = () => {
               <h2 className='h-section'>Education Section</h2>
               <p className='section-text'>Estou no 5º período do curso de Sistemas de Informação na UNIFOA.
                 Minha busca por conhecimento e aprimoramento é constante, utilizando
-                tecnologias como HTML, CSS, JavaScript, TypeScript, Vite, React, SQL,
-                Python e AppWrite.</p>
+                tecnologias como <b>HTML, CSS, JavaScript, TypeScript, Vite, React, SQL
+                Python e AppWrite.</b></p>
             </div>
           )}
           {activeSection === 'Experience' && (
             <div>
               <h2 className='h-section'>Experience Section</h2>
               <p className='section-text'>Participei de projetos significativos,
-              como Coordenador na Sala+Verde da UNIFOA, desenvolvendo sites responsivos.
-              Na "Game Jam UNIFOA", atuei como Líder Estudantil, ministrando palestras
+              como Coordenador Estudantil na <b>Sala+Verde da UNIFOA</b>, desenvolvendo sites responsivos.
+              Na <b>"Game Jam UNIFOA"</b>, atuei como Líder Estudantil, ministrando palestras
               e orientando em desenvolvimento de jogos e modelos de personagens.</p>
             </div>
           )}

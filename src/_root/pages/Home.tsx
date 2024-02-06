@@ -9,10 +9,11 @@ const Home = () => {
     window.open(curriculumPath, '_blank');
   };
   return (
-    <div className="home">
+    <div className="home ">
       <div className="home-text-container">
         <div>
-          <h2 className="h3-h sm:">Hello </h2>
+          <h2 className="h3-h">Hello </h2>
+          <h3 className="md:hidden"> oi teste </h3>
           <h1 className="h1-h">I'm Pedro Reis</h1>
           <h2 className="h2-h">Web Dev</h2>
         </div>
