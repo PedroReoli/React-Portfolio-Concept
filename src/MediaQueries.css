@@ -71,7 +71,7 @@ body {
         width: 110px;
         height: auto;
         border-radius: 50%;
-        left: 40%;
+        left: 70%;
         top: 10px;
       }
       
@@ -110,14 +110,14 @@ PEQUENO SM
       Responsive Home 
       =============================== */
       .h3-h {
-        display: none;
+        font-size: 12px;
       }
       .h1-h {
-        font-size: 20px;
+        font-size: 25px;
       }
       .h2-h {
         /* display: none; */
-        font-size: 13px;
+        font-size: 15px;
       }
       .home-text-container{
         /* background-color: aliceblue; */
@@ -144,16 +144,20 @@ PEQUENO SM
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 110px;
+        width: 150px;
         height: auto;
         border-radius: 50%;
         left: 40%;
         top: 10px;
       }
-      
       .tech-icons {
-        width: 2px;
-        /* display: none; */
+        position: relative;
+        left: 30%;
+      }
+      .tech-icons img {
+        width: 20px;
+        height: auto;
+       
       }
     
     }
@@ -184,10 +188,233 @@ MEDIO MD
         font-size: 20px; /* Reduz o tamanho do texto dos links para telas XS */
         margin: 10px 20px; /* Altera as margens dos links para telas XS */
       }
+
+      
+      /* ===============================
+      Responsive Home 
+      =============================== */
+      .h3-h {
+        font-size: 12px;
+      }
+      .h1-h {
+        font-size: 30px;
+      }
+      .h2-h {
+        /* display: none; */
+        font-size: 15px;
+      }
+      .home-text-container{
+        /* background-color: aliceblue; */
+        top: 35%;
+        left:3%;
+        width: 100px;
+        text-wrap:nowrap;
+      }
+      .h-button {
+        font-size: 10px;
+        display: flex; /* Para ativar o alinhamento vertical e horizontal */
+        justify-content: center; /* Para alinhar horizontalmente */
+        align-items: center; /* Para alinhar verticalmente */
+        padding: 10px 20px; /* Ajuste o padding conforme necessário */
+      }
+      button {
+        height: 30px;
+        
+      }
+     
+      
+      .home-circle {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: auto;
+        border-radius: 50%;
+        left: 30%;
+        top: 10px;
+      }
+      .tech-icons {
+        position: relative;
+        left: 30%;
+      }
+      .tech-icons img {
+        width: 35px;
+        height: auto;
+       
+      }
+    
     }
-        /* ===============================
-    Responsive Home 
+        
+ /* ===============================
+      
+
+
+992-1200
+
+      =============================== */
+
+      @media (min-width: 992px) and (max-width: 1200px) {
+
+   /* ===============================
+    Responsive Topbar 
    =============================== */
+
+    .topbar {
+      padding: 2px 0.5%; /* Altera o padding para telas XS */
+    }
+  
+    .logo {
+      width: 200px; /* Reduz o tamanho do logo para telas XS */
+    }
+  
+    ul li {
+      font-size: 20px; /* Reduz o tamanho do texto dos links para telas XS */
+      margin: 10px 20px; /* Altera as margens dos links para telas XS */
+    }
+
+    
+    /* ===============================
+    Responsive Home 
+    =============================== */
+    .h3-h {
+      font-size: 15px;
+    }
+    .h1-h {
+      font-size: 35px;
+    }
+    .h2-h {
+      /* display: none; */
+      font-size: 18px;
+    }
+    .home-text-container{
+      /* background-color: aliceblue; */
+      top: 35%;
+      left:3%;
+      width: 100px;
+      text-wrap:nowrap;
+    }
+    .h-button {
+      font-size: 10px;
+      display: flex; /* Para ativar o alinhamento vertical e horizontal */
+      justify-content: center; /* Para alinhar horizontalmente */
+      align-items: center; /* Para alinhar verticalmente */
+      padding: 10px 20px; /* Ajuste o padding conforme necessário */
+    }
+    button {
+      height: 35px;
+      
+    }
+   
+    
+    .home-circle {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: auto;
+      border-radius: 50%;
+      left: 30%;
+      top: 10px;
+    }
+    .tech-icons {
+      position: relative;
+      left: 30%;
+    }
+    .tech-icons img {
+      width: 35px;
+      height: auto;
+     
+    }
   
   
+      }
+       /* ===============================
+      
+
+
+        1200 PRA FRENTE
+
+      =============================== */
+      @media (min-width: 1200px)  and (max-width: 1200px) {
+
+
+
+   /* ===============================
+    Responsive Topbar 
+   =============================== */
+
+   .topbar {
+    padding: 2px 0.5%; /* Altera o padding para telas XS */
+  }
+
+  .logo {
+    width: 200px; /* Reduz o tamanho do logo para telas XS */
+  }
+
+  ul li {
+    font-size: 20px; /* Reduz o tamanho do texto dos links para telas XS */
+    margin: 10px 20px; /* Altera as margens dos links para telas XS */
+  }
+
   
+  /* ===============================
+  Responsive Home 
+  =============================== */
+  .h3-h {
+    font-size: 30px;
+  }
+  .h1-h {
+    font-size: 60px;
+  }
+  .h2-h {
+    /* display: none; */
+    font-size: 40px;
+  }
+  .home-text-container{
+    /* background-color: aliceblue; */
+    top: 35%;
+    left:3%;
+    width: 100px;
+    text-wrap:nowrap;
+  }
+  .h-button {
+    font-size: 15px;
+    display: flex; /* Para ativar o alinhamento vertical e horizontal */
+    justify-content: center; /* Para alinhar horizontalmente */
+    align-items: center; /* Para alinhar verticalmente */
+    padding: 10px 20px; /* Ajuste o padding conforme necessário */
+  }
+  button {
+    height: 40px;
+    
+  }
+ 
+  
+  .home-circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    left: 40%;
+    top: 10px;
+  }
+  .tech-icons {
+    position: relative;
+    left: 40%;
+  }
+  .tech-icons img {
+    width: 40px;
+    height: auto;
+   
+  }
+
+
+    }
+
+      
+      
