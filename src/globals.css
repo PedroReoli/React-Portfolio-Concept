@@ -340,8 +340,8 @@ h1, h2, h3, h4, h5, h6 {
 /* ===============================
     Portfolio
    =============================== */
+   /* Estilos para a seção Portfolio */
 .portfolio-container {
-  /* background-color: #f0f0f0; */
   padding: 40px 20px;
   text-align: center;
 }
@@ -353,8 +353,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 15px; /* Distancia Vertical */
+  grid-template-columns: 1fr; /* Mudança aqui para alinhar horizontalmente */
+  gap: 15px; /* Espaçamento entre os cartões */
 }
 
 .project-card {
@@ -363,15 +363,12 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  margin-top: 55px;
-  width: 350px;
-  height: 600px;
-  
+  width: 350px; /* Largura do cartão */
+  height: 600px; /* Altura do cartão */
 }
 
 .project-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.03); /* Efeito de escala ao passar o mouse */
 }
 
 .project-card img {
@@ -389,14 +386,17 @@ h1, h2, h3, h4, h5, h6 {
 .project-card p {
   margin-bottom: 15px;
 }
+
 .p-1 {
   font-size: 20px;
   font-weight: bold;
 }
+
 .p-2 {
   font-weight: bold;
-  color:var(--topbarblack);
+  color: var(--topbarblack);
 }
+
 .project-card a {
   display: inline-block;
   padding: 10px 20px;
@@ -432,6 +432,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   transition: opacity 0.3s;
 }
+
 .project-card:hover .project-details {
   opacity: 1;
 }
