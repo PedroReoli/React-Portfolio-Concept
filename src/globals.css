@@ -341,21 +341,32 @@ h1, h2, h3, h4, h5, h6 {
     Portfolio
    =============================== */
    /* Estilos para a seção Portfolio */
+
+.h2-portfolio {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: absolute;
+  left: 45%;
+  top: 13%;
+ 
+ 
+}
 .portfolio-container {
   padding: 40px 20px;
-  text-align: center;
+  margin: 0 auto;
+  padding-top: 10%;
 }
 
-.h2-h {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
+
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Mudança aqui para alinhar horizontalmente */
-  gap: 15px; /* Espaçamento entre os cartões */
+  grid-template-columns: repeat( 5, minmax(250px, 1fr) );
+  grid-gap: 20px;
 }
+
+
 
 .project-card {
   position: relative;
@@ -380,21 +391,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-card h3 {
   font-size: 30px;
+  position: fixed;
+  top:15%;
   margin-bottom: 15px;
+  /* text-align: center; */
 }
 
 .project-card p {
   margin-bottom: 15px;
+  /* text-align: center; */
 }
 
 .p-1 {
   font-size: 20px;
   font-weight: bold;
+ 
+  /* text-align: center; */
 }
 
 .p-2 {
   font-weight: bold;
   color: var(--topbarblack);
+  /* text-align: center; */
 }
 
 .project-card a {
@@ -403,6 +421,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--newpurple);
   color: var(--lgreen);
   text-decoration: none;
+  text-align: center;
   border-radius: 20px;
   transition: background-color 0.3s ease-in-out;
 }
@@ -426,11 +445,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   padding: 20px;
-  padding-top: 38%;
+  padding-top: 15%;
+  padding-right: 10px;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.761);
   opacity: 0;
   transition: opacity 0.3s;
+  display: flex; /* Adicionando flex container */
+  flex-direction: column; /* Ajustando a direção do flex para column */
+  justify-content: center; /* Alinhando verticalmente no centro */
+  align-items: center; /* Alinhando horizontalmente no centro */
 }
 
 .project-card:hover .project-details {
