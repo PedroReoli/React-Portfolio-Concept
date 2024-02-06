@@ -1,9 +1,9 @@
 /* Importação de Fontes */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
 
 /* ===============================
     Body Styles 
@@ -31,6 +31,7 @@
 body {
 
   font-family: 'Inter', sans-serif;
+  
 
   
   background-color: var(--backgroundblack); /* Cor de fundo principal */
@@ -194,7 +195,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 530px;
   height: 630px;
   border-radius: 50%;
-  background-color: #f00;
   position: relative;
   overflow: hidden;
 }
@@ -341,125 +341,113 @@ h1, h2, h3, h4, h5, h6 {
     Portfolio
    =============================== */
    /* Estilos para a seção Portfolio */
-
-.h2-portfolio {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 20px;
-  position: absolute;
-  left: 45%;
-  top: 13%;
- 
- 
-}
-.portfolio-container {
-  padding: 40px 20px;
-  margin: 0 auto;
-  padding-top: 10%;
-}
-
-
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat( 5, minmax(250px, 1fr) );
-  grid-gap: 20px;
-}
-
-
-
-.project-card {
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 350px; /* Largura do cartão */
-  height: 600px; /* Altura do cartão */
-}
-
-.project-card:hover {
-  transform: scale(1.03); /* Efeito de escala ao passar o mouse */
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  padding-top: 30%;
-}
-
-.project-card h3 {
-  font-size: 30px;
-  position: fixed;
-  top:15%;
-  margin-bottom: 15px;
-  /* text-align: center; */
-}
-
-.project-card p {
-  margin-bottom: 15px;
-  /* text-align: center; */
-}
-
-.p-1 {
-  font-size: 20px;
-  font-weight: bold;
- 
-  /* text-align: center; */
-}
-
-.p-2 {
-  font-weight: bold;
-  color: var(--topbarblack);
-  /* text-align: center; */
-}
-
-.project-card a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--newpurple);
-  color: var(--lgreen);
-  text-decoration: none;
-  text-align: center;
-  border-radius: 20px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.project-card a:hover {
-  background-color: var(--contrast);
-}
-
-.project-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.project-details {
-  color: var(--backgroundblack);
-  font-size: 18px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  padding-top: 15%;
-  padding-right: 10px;
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.761);
-  opacity: 0;
-  transition: opacity 0.3s;
-  display: flex; /* Adicionando flex container */
-  flex-direction: column; /* Ajustando a direção do flex para column */
-  justify-content: center; /* Alinhando verticalmente no centro */
-  align-items: center; /* Alinhando horizontalmente no centro */
-}
-
-.project-card:hover .project-details {
-  opacity: 1;
-}
+   .portfolio-container {
+    /* background-color: #f0f0f0; */
+    padding: 40px 20px;
+    text-align: center;
+    
+  }
+  
+  .h2-portfolio {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    position:absolute;
+    left: 45%;
+    top: 13%;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px; /* Distancia Vertical */
+    padding-top: 100px;
+  }
+  
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    margin-top: 55px;
+    width: 350px;
+    height: 600px;
+    
+  }
+  
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding-top: 30%;
+  }
+  
+  .project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card p {
+    margin-bottom: 15px;
+  }
+  
+  .p-1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .p-2 {
+    font-weight: bold;
+    color:var(--topbarblack);
+  }
+  .project-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--newblack);
+    background-color: var(--newpurple);
+    color: var(--lgreen);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .project-card a:hover {
+    background-color: var(--newgray);
+    background-color: var(--contrast);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .project-details {
+    color: var(--backgroundblack);
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 38%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.761);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .project-card:hover .project-details {
+    opacity: 1;
+  }
 /* ===============================
     SocialMedias
    =============================== */
