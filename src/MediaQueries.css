@@ -8,7 +8,9 @@ EXTRA PEQUENO XS
 
       =============================== */
 @media (max-width: 576px) {
-
+body {
+  overflow: hidden;
+}
     /* ===============================
     Responsive Topbar 
    =============================== */
@@ -59,35 +61,24 @@ EXTRA PEQUENO XS
         height: 10px;
         
       }
+     
       
       .home-circle {
-        display: flex;
-        width: 110px; /* Ajuste o tamanho da imagem conforme necessário */
-        height: auto; /* Mantém a proporção */
-        border-radius: 50%;
-        left: 70%;
-        top: 10px;
         position: relative;
-      }
-      .tech-icons {
-        display: flex; /* Ativa o flexbox para alinhar as imagens */
-        justify-content: center; /* Alinha as imagens horizontalmente */
-       position: absolute;
-        bottom: 0; /* Alinha as imagens no fundo do círculo */
-        left: 120%; /* Alinha as imagens à esquerda do círculo */
-        right: 0; /* Alinha as imagens à direita do círculo */
-        top: 80%;
-        z-index: 1000px;
-        gap: 1px; /* Adiciona espaçamento entre as imagens */
-      }
-      .tech-icons img {
-  
-        width: 15px; /* Ajuste o tamanho das imagens conforme necessário */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
         height: auto;
-        margin: 0 3px; /* Adiciona um espaço entre as imagens */
+        border-radius: 50%;
+        left: 40%;
+        top: 10px;
       }
       
-
+      .tech-icons {
+        display: none;
+      }
+    
     }
  /* ===============================
       
@@ -115,12 +106,11 @@ PEQUENO SM
         margin: 10px 20px; /* Altera as margens dos links para telas XS */
       }
   
-            /* ===============================
+      /* ===============================
       Responsive Home 
       =============================== */
       .h3-h {
-
-        font-size: 10px;
+        display: none;
       }
       .h1-h {
         font-size: 20px;
@@ -131,8 +121,8 @@ PEQUENO SM
       }
       .home-text-container{
         /* background-color: aliceblue; */
-        top: 30%;
-        left: 5%;
+        top: 25%;
+        left:3%;
         width: 100px;
         text-wrap:nowrap;
       }
@@ -147,17 +137,23 @@ PEQUENO SM
         height: 10px;
         
       }
+     
       
       .home-circle {
-        width: 110px; /* Ajuste o tamanho da imagem conforme necessário */
-        height: auto; /* Mantém a proporção */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: auto;
         border-radius: 50%;
-        left: 30px;
-        top: 30px;
+        left: 40%;
+        top: 10px;
       }
+      
       .tech-icons {
-        /* width: 2px; */
-        display: none;
+        width: 2px;
+        /* display: none; */
       }
     
     }
