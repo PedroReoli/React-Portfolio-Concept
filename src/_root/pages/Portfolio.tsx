@@ -80,11 +80,13 @@ const Portfolio = () => {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <div className="project-details">
-              <h3>{project.title}</h3>
+            <div  className="project-details">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-card-link">
+              <h3 >{project.title}</h3>
+              </a>
               <p className="p-1">Tecnologias: {project.technologies.join(', ')}</p>
               <p className="p-2">{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="a-portfolio">
                 Ver Projeto
               </a>
             </div>
