@@ -27,9 +27,10 @@ const About = () => {
 
       {/* Conteúdo de texto */}
       <div className="about-text-container">
-        <h2 className="h3-h">A bit </h2>
-        <h1 className="h1-h">About Me</h1>
-
+        <div className='heading-about'>
+        <h2 className="h3-a">A bit </h2>
+        <h1 className="h1-a">About Me</h1>
+        </div>
         {/* Seções */}
         <div className="section-buttons">
           <button className={`section-button ${activeSection === 'Life' ? 'active' : ''}`} onClick={() => handleSectionClick('Life')}>

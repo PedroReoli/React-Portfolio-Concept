@@ -79,7 +79,77 @@ body {
         display: none;
       }
     
-    }
+  
+      /* ===============================
+      Responsive About
+      =============================== */
+         /* Estilos para os títulos */
+         .h1-a {
+          
+          font-size: 20px; /* Reduz o tamanho do título principal */
+          letter-spacing: 3px; /* Ajusta o espaçamento entre as letras */
+        }
+      
+        
+      
+        .h3-a {
+          
+          display: none;
+        }
+     
+    
+      .about-text-container {
+          /* background-color: aliceblue; */
+          width: 180px;
+        top: 20%;
+        left: 40%;
+      }
+      .section-content {
+        
+        position: relative;
+        bottom: 25px;
+      }
+    
+      .section-buttons {
+        /* flex-direction: column; Alinha os botões verticalmente */
+        align-items: center; /* Alinha os botões no centro */
+        margin-top: 20px; /* Adiciona espaço acima dos botões */
+      }
+      .section-image {
+        position: relative;
+        right: 25%;
+        top: 10%;
+        width: 140px;
+        height: auto;
+      }
+     
+      .h-section {
+        display: none;
+      font-size: 8px;
+      
+      }
+      .section-text {
+        /* display: none; */
+        font-size: 5px;
+      }
+      .section-buttons{
+        gap: 20px;
+        
+      }
+      .section-button {
+        width: 80px;
+        font-size: 10px;
+        /* display: none; */
+        margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
+        margin-bottom: 10px; /* Adiciona espaço entre os botões */
+      }
+    
+      .section-button:hover::after {
+        display: none; /* Remove a linha que aparece ao passar o mouse */
+      }
+    
+    }  /*  ESSE É O FINAL */
+
  /* ===============================
       
 
@@ -159,9 +229,91 @@ PEQUENO SM
         height: auto;
        
       }
+      /* ===============================
+      Responsive About
+      =============================== */
+         /* Estilos para os títulos */
+         .heading-about{
+          
+          padding-top: 10px;
+          
+         }
+         .h1-a {
+          position: relative;
+          bottom: 10px;
+          /* display: none; */
+          font-size: 25px; /* Reduz o tamanho do título principal */
+          letter-spacing: 2px; /* Ajusta o espaçamento entre as letras */
+        }
+      
+        
+      
+        .h3-a {
+          font-size: 10px;
+          /* display: none; */
+        }
+     
     
-    }
-  
+      .about-text-container {
+                  
+          /* display: none; */
+          width: 300px;
+        top: 20%;
+        left: 40%;
+      }
+
+      .section-buttons {
+        position: relative;
+        bottom: 25px;
+        /* flex-direction: column; Alinha os botões verticalmente */
+        align-items: center; /* Alinha os botões no centro */
+        margin-top: 20px; /* Adiciona espaço acima dos botões */
+      }
+
+      .section-content {
+        
+        position: relative;
+        bottom: 50px;
+      }
+    
+      .section-image {
+        position: relative;
+        right: 25%;
+        top: 10%;
+        width: 180px;
+        height: auto;
+      }
+     
+      .h-section {
+        display: none;
+      font-size: 8px;
+      
+      }
+      .section-text {
+       
+        /* display: none; */
+
+        font-size: 7px;
+        word-wrap: break-word;
+      }
+      .section-buttons{
+        gap: 20px;
+        
+      }
+      .section-button {
+        width: 80px;
+        font-size: 10px;
+        /* display: none; */
+        margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
+        margin-bottom: 10px; /* Adiciona espaço entre os botões */
+      }
+    
+      .section-button:hover::after {
+        display: none; /* Remove a linha que aparece ao passar o mouse */
+      }
+    
+    }  /*  ESSE É O FINAL */
+
  /* ===============================
       
 
@@ -244,7 +396,90 @@ MEDIO MD
        
       }
     
-    }
+ 
+      /* ===============================
+      Responsive About
+      =============================== */
+         /* Estilos para os títulos */
+         .heading-about{
+          
+          padding-top: 10px;
+          
+         }
+         .h1-a {
+          position: relative;
+          bottom: 10px;
+          /* display: none; */
+          font-size: 25px; /* Reduz o tamanho do título principal */
+          letter-spacing: 2px; /* Ajusta o espaçamento entre as letras */
+        }
+      
+        
+      
+        .h3-a {
+          font-size: 10px;
+          /* display: none; */
+        }
+     
+    
+      .about-text-container {
+                  
+          /* display: none; */
+          width: 400px;  /* Tamanho do Container sem ser a Imagem*/
+        top: 25%;
+        left: 45%;
+      }
+
+      .section-buttons {
+        position: relative;
+        bottom: 25px;
+        align-items: center; /* Alinha os botões no centro */
+        margin-top: 20px; /* Adiciona espaço acima dos botões */
+      }
+
+      .section-content {
+        
+        position: relative;
+        bottom: 50px;
+      }
+    
+      .section-image {
+        position: relative;
+        right: 25%;
+        top: 10%;
+        width: 280px;
+        height: auto;
+      }
+     
+      .h-section {
+        /* display: none; */
+      font-size: 18px;
+      
+      }
+      .section-text {
+       
+        /* display: none; */
+
+        font-size: 12px; /* Tamnho do texto das sessoes */
+        word-wrap: break-word;
+      }
+      .section-buttons{
+        gap: 20px;
+        
+      }
+      .section-button {
+        width: 80px;
+        font-size: 15px; /* Tamanho da fonte DENTRO do Botão */
+        /* display: none; */
+        margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
+        margin-bottom: 10px; /* Adiciona espaço entre os botões */
+      }
+    
+      .section-button:hover::after {
+        display: none; /* Remove a linha que aparece ao passar o mouse */
+      }
+    
+    }  /*  ESSE É O FINAL */
         
  /* ===============================
       
@@ -328,93 +563,87 @@ MEDIO MD
      
     }
   
-  
-      }
-       /* ===============================
-      
-
-
-        1200 PRA FRENTE
-
+      /* ===============================
+      Responsive About
       =============================== */
-      @media (min-width: 1200px)  and (max-width: 1200px) {
-
-
-
-   /* ===============================
-    Responsive Topbar 
-   =============================== */
-
-   .topbar {
-    padding: 2px 0.5%; /* Altera o padding para telas XS */
-  }
-
-  .logo {
-    width: 200px; /* Reduz o tamanho do logo para telas XS */
-  }
-
-  ul li {
-    font-size: 20px; /* Reduz o tamanho do texto dos links para telas XS */
-    margin: 10px 20px; /* Altera as margens dos links para telas XS */
-  }
-
-  
-  /* ===============================
-  Responsive Home 
-  =============================== */
-  .h3-h {
-    font-size: 30px;
-  }
-  .h1-h {
-    font-size: 60px;
-  }
-  .h2-h {
-    /* display: none; */
-    font-size: 40px;
-  }
-  .home-text-container{
-    /* background-color: aliceblue; */
-    top: 35%;
-    left:3%;
-    width: 100px;
-    text-wrap:nowrap;
-  }
-  .h-button {
-    font-size: 15px;
-    display: flex; /* Para ativar o alinhamento vertical e horizontal */
-    justify-content: center; /* Para alinhar horizontalmente */
-    align-items: center; /* Para alinhar verticalmente */
-    padding: 10px 20px; /* Ajuste o padding conforme necessário */
-  }
-  button {
-    height: 40px;
+         /* Estilos para os títulos */
+         .heading-about{
+          
+          padding-top: 10px;
+          
+         }
+         .h1-a {
+          position: relative;
+          bottom: 10px;
+          /* display: none; */
+          font-size: 35px; /* Reduz o tamanho do título principal */
+          letter-spacing: 2px; /* Ajusta o espaçamento entre as letras */
+        }
+      
+        
+      
+        .h3-a {
+          font-size: 10px;
+          /* display: none; */
+        }
+     
     
-  }
- 
-  
-  .home-circle {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: auto;
-    border-radius: 50%;
-    left: 40%;
-    top: 10px;
-  }
-  .tech-icons {
-    position: relative;
-    left: 40%;
-  }
-  .tech-icons img {
-    width: 40px;
-    height: auto;
-   
-  }
+      .about-text-container {
+                  
+          /* display: none; */
+          width: 400px;  /* Tamanho do Container sem ser a Imagem*/
+        top: 25%;
+        left: 45%;
+      }
 
+      .section-buttons {
+        position: relative;
+        bottom: 25px;
+        align-items: center; /* Alinha os botões no centro */
+        margin-top: 20px; /* Adiciona espaço acima dos botões */
+      }
 
-    }
-
+      .section-content {
+        
+        position: relative;
+        bottom: 50px;
+      }
+    
+      .section-image {
+        position: relative;
+        right: 25%;
+        top: 10%;
+        width: 320px;
+        height: auto;
+      }
+     
+      .h-section {
+        /* display: none; */
+      font-size: 18px;
       
-      
+      }
+      .section-text {
+       
+        /* display: none; */
+
+        font-size: 12px; /* Tamnho do texto das sessoes */
+        word-wrap: break-word;
+      }
+      .section-buttons{
+        gap: 20px;
+        
+      }
+      .section-button {
+        width: 80px;
+        font-size: 15px; /* Tamanho da fonte DENTRO do Botão */
+        /* display: none; */
+        margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
+        margin-bottom: 10px; /* Adiciona espaço entre os botões */
+      }
+    
+      .section-button:hover::after {
+        display: none; /* Remove a linha que aparece ao passar o mouse */
+      }
+    
+    }  /*  ESSE É O FINAL */
+
