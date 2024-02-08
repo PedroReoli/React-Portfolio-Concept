@@ -469,14 +469,15 @@ h1, h2, h3, h4, h5, h6 {
    .contact-container {
     padding: 40px 20px;
     text-align: center;
+    
   }
   
   .h2-c {
-    font-size: 36px;
+    font-size: 55px;
     margin-bottom: 20px;
     position: absolute;
-    left: 17%;
-    top: 38%;
+    left: 10%;
+    top: 20%;
     transform: translate(-50%, -50%);
     transform: scale(1.5);
     padding: 20px;
@@ -485,14 +486,14 @@ h1, h2, h3, h4, h5, h6 {
 
   }
   .p-contact {
-    font-size: 25px;
+    font-size:30px;
     opacity: 0.8;
     margin-bottom: 20px;
     position: absolute;
     left: 8%;
-    top: 48%;
+    top:35%;
     padding-top: 10px;
-    max-width: 550px; /* Defina o valor máximo desejado */
+    max-width: 700px; /* Defina o valor máximo desejado */
     overflow: hidden;
     text-align: justify;
   }
@@ -543,10 +544,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    
   }
   
   .social-icon {
-    font-size: 40px;
+    font-size: 70px;
     color: var(--contrast);
     margin: 0 10px;
     text-decoration: none;
@@ -559,7 +561,7 @@ h1, h2, h3, h4, h5, h6 {
   
 .social-circle-container {
   position: absolute;
-  left: 65%;
+  left: 70%;
   top: 55%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -568,8 +570,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-circle {
-  width: 530px;
-  height: 630px;
+  width: 480px;
+  height: 580px;
   border-radius: 50%;
   background-color: #f00;
   position: relative;
