@@ -1,4 +1,204 @@
+@media (max-width: 480px) {
 
+  body {
+    overflow: hidden;
+  }
+      /* ===============================
+      Responsive Topbar 
+     =============================== */
+  
+      .topbar {
+          padding: 1px 0.5%; /* Altera o padding para telas XS */
+        }
+      
+        .logo {
+          width: 120px; /* Reduz o tamanho do logo para telas XS */
+        }
+        ul {
+          margin-right: 20px;
+        }
+        ul li {
+          font-size: 12px; /* Reduz o tamanho do texto dos links para telas XS */
+          margin: 10px 8px; /* Altera as margens dos links para telas XS */
+        }
+        
+        /* ===============================
+        Responsive Home 
+        =============================== */
+        .h3-h {
+          display: none;
+        }
+        .h1-h {
+          font-size: 20px;
+        }
+        .h2-h {
+          /* display: none; */
+          font-size: 13px;
+        }
+        .home-text-container{
+          /* background-color: aliceblue; */
+          top: 25%;
+          left:3%;
+          width: 100px;
+          text-wrap:nowrap;
+        }
+        .h-button {
+          font-size: 10px;
+          display: flex; /* Para ativar o alinhamento vertical e horizontal */
+          justify-content: center; /* Para alinhar horizontalmente */
+          align-items: center; /* Para alinhar verticalmente */
+          padding: 10px 20px; /* Ajuste o padding conforme necessário */
+        }
+        button {
+          height: 10px;
+          
+        }
+       
+        
+        .home-circle {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 110px;
+          height: auto;
+          border-radius: 50%;
+          left: 70%;
+          top: 10px;
+        }
+        
+        .tech-icons {
+          display: none;
+        }
+      
+    
+        /* ===============================
+        Responsive About
+        =============================== */
+
+  
+           /* Estilos para os títulos */
+           .h1-a {
+            
+            font-size: 20px; /* Reduz o tamanho do título principal */
+            letter-spacing: 3px; /* Ajusta o espaçamento entre as letras */
+          }
+        
+          
+        
+          .h3-a {
+            
+            display: none;
+          }
+       
+      
+        .about-text-container {
+            /* background-color: aliceblue; */
+            width: 180px;
+          top: 20%;
+          left: 40%;
+        }
+        .section-content {
+          
+          position: relative;
+          bottom: 25px;
+        }
+      
+        .section-buttons {
+          /* flex-direction: column; Alinha os botões verticalmente */
+          align-items: center; /* Alinha os botões no centro */
+          margin-top: 20px; /* Adiciona espaço acima dos botões */
+        }
+        .section-image {
+          position: relative;
+          right: 25%;
+          top: 10%;
+          width: 140px;
+          height: auto;
+        }
+       
+        .h-section {
+          display: none;
+        font-size: 8px;
+        
+        }
+        .section-text {
+          /* display: none; */
+          font-size: 5px;
+        }
+        .section-buttons{
+          gap: 20px;
+          
+        }
+        
+        .section-button {
+          width: 80px;
+          font-size: 10px;
+          /* display: none; */
+          margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
+          margin-bottom: 10px; /* Adiciona espaço entre os botões */
+        }
+      
+        .section-button:hover::after {
+          display: none; /* Remove a linha que aparece ao passar o mouse */
+        }
+         /* ===============================
+        Responsive Portfolio
+        =============================== */
+        
+  /* .h2-portfolio */
+  .h2-portfolio {
+  display: none;
+  }
+  .portfolio-container {
+    position: relative;
+    bottom: 120px;
+  }
+  .projects-grid {
+    position: relative;
+    right: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Defina o tamanho mínimo e máximo das colunas */
+    gap: 30px; /* Ajuste a distância vertical e horizontal entre os itens */
+    padding-top: 100px;
+  }
+  .project-card {
+    /* position: relative; */
+    width: 90px;
+    height: auto;
+  }
+  
+  .project-card h3 {
+    font-size: 8px;
+    position: fixed;
+    width: 80px;
+    right: 5px;
+    top: 20px;  
+  }
+  .project-card p {
+    width: 70px;
+    position: relative;
+    right: 10px;
+  }
+  .p-1 {
+   position: relative;
+   top: 5px;
+    font-size: 6px;
+  }
+  .p-2 {
+    position: relative;
+    bottom: 10px;
+    font-size: 5px;
+  }
+  .a-portfolio {
+  display: none;
+  }
+      
+      }  /*  ESSE É O FINAL */
+ 
+ 
+ 
+ 
+ 
  /* ===============================
       
 
@@ -585,7 +785,7 @@ MEDIO MD
       }
     
    /* ===============================
-      Responsive Portfolio  ESSE É O QUE EU PAREI 
+      Responsive Portfolio  
       =============================== */
       
      
@@ -600,11 +800,11 @@ MEDIO MD
   }
   .projects-grid {
     position: relative;
-    right: 25px;
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); /* Defina o tamanho mínimo e máximo das colunas */
-    gap: 110px; /* Ajuste a distância vertical e horizontal entre os itens */
+    left: 20px;
+    grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Defina o tamanho mínimo e máximo das colunas */
+    gap: 1px; /* Ajuste a distância vertical e horizontal entre os itens */
     padding-top: 100px;
-    margin-bottom: -100px; 
+     
   }
   .project-card {
     position: relative;
@@ -613,26 +813,31 @@ MEDIO MD
   }
   
   .project-card h3 {
-    font-size: 9px;
-    position: fixed;
-    width: 100px;
-    right: -2px;
-    top: 20px;  
+    font-size: 15px;
+    position: relative;
+    
+    right: 2px;
+    
+    bottom: 50px;  
   }
   .project-card p {
-    width: 70px;
+    width: 180px;
     position: relative;
-    right: 10px;
+    right: 20px;
   }
+  
   .p-1 {
    position: relative;
-   top: 5px;
-    font-size: 6px;
+   bottom: 60px;
+
+    font-size: 11px;
   }
   .p-2 {
     position: relative;
-    bottom: 10px;
-    font-size: 5px;
+    bottom: 70px;
+    left: -7px;
+    font-size: 10px;
+    max-width: 150px;
   }
   .a-portfolio {
   display: none;
@@ -804,5 +1009,63 @@ MEDIO MD
         display: none; /* Remove a linha que aparece ao passar o mouse */
       }
     
-    }  /*  ESSE É O FINAL */
+/* ===============================
+      Responsive Portfolio  
+      =============================== */
+      
+     
+/* .h2-portfolio */
+.h2-portfolio {
+  display: none;
+  }
+  .portfolio-container {
+    position: relative;
+    bottom: 120px;
+   
+  }
+  .projects-grid {
+    position: relative;
+    left: 20px;
+    grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Defina o tamanho mínimo e máximo das colunas */
+    gap: 1px; /* Ajuste a distância vertical e horizontal entre os itens */
+    padding-top: 100px;
+     
+  }
+  .project-card {
+    position: relative;
+    width: 180px;
+    height: auto;
+  }
+  
+  .project-card h3 {
+    font-size: 15px;
+    position: relative;
+    
+    right: 2px;
+    
+    bottom: 50px;  
+  }
+  .project-card p {
+    width: 180px;
+    position: relative;
+    right: 20px;
+  }
+  
+  .p-1 {
+   position: relative;
+   bottom: 60px;
 
+    font-size: 11px;
+  }
+  .p-2 {
+    position: relative;
+    bottom: 70px;
+    left: -7px;
+    font-size: 10px;
+    max-width: 150px;
+  }
+  .a-portfolio {
+  display: none;
+  }
+      
+      }  /*  ESSE É O FINAL */
