@@ -192,6 +192,36 @@
   .a-portfolio {
   display: none;
   }
+
+   /* ===============================
+      Responsive Social Medias
+     =============================== */
+     .contact-container{
+      position: relative;
+      right: 45%;
+      top: -15px;
+        }
+     .h2-c {
+      font-size: 20px;
+      position: relative;
+     }
+     .p-contact {
+      /* display: none; */
+      font-size: 8px;
+      position: relative;
+      left: 200px;
+      bottom: 40px;
+     }
+   
+     .social-circle{
+      display: none;
+     }
+     .social-icons {
+      position: relative;
+      left: 50%;
+      top: 50px;
+     }
+
       
       }  /*  ESSE É O FINAL */
  
@@ -398,6 +428,36 @@ display: none;
 .a-portfolio {
 display: none;
 }
+   /* ===============================
+      Responsive Social Medias
+     =============================== */
+     .contact-container{
+      position: relative;
+      right: 45%;
+      top: -15px;
+        }
+     .h2-c {
+      font-size: 20px;
+      position: relative;
+     }
+     .p-contact {
+      /* display: none; */
+      font-size: 8px;
+      position: relative;
+      left: 200px;
+      bottom: 40px;
+     }
+   
+     .social-circle{
+      display: none;
+     }
+     .social-icons {
+      position: relative;
+      left: 50%;
+      top: 50px;
+     }
+
+
     
     }  /*  ESSE É O FINAL */
 
@@ -616,6 +676,36 @@ PEQUENO SM
   .a-portfolio {
   display: none;
   }
+     /* ===============================
+      Responsive Social Medias
+     =============================== */
+     .contact-container{
+      position: relative;
+      right: 30%;
+      top: -10px;
+        }
+     .h2-c {
+      font-size: 20px;
+      position: relative;
+      left: 50px;
+     }
+     .p-contact {
+      /* display: none; */
+      font-size: 12px;
+      position: relative;
+      left: 180px;
+      bottom: 40px;
+     }
+   
+     .social-circle{
+      display: none;
+     }
+     .social-icons {
+      position: relative;
+      left:40%;
+      top: 60px;
+     }
+
       
       }  /*  ESSE É O FINAL */
 
@@ -842,6 +932,37 @@ MEDIO MD
   .a-portfolio {
   display: none;
   }
+    /* ===============================
+      Responsive Social Medias
+     =============================== */
+     .contact-container{
+      position: relative;
+      right: 30%;
+      top: -10px;
+        }
+     .h2-c {
+      font-size: 20px;
+      position: relative;
+      left: 40px;
+     }
+     .p-contact {
+      /* display: none; */
+      font-size: 12px;
+      position: relative;
+      left: 180px;
+      bottom: 40px;
+     }
+   
+     .social-circle{
+      width: 250px;
+      height: auto;
+     }
+     .social-icons {
+      position: relative;
+      left:40%;
+      top: 60px;
+     }
+
       
       }  /*  ESSE É O FINAL */
         
