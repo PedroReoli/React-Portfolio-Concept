@@ -10,7 +10,7 @@ const Home = () => {
   };
   return (
     <div className="home ">
-      <div className="home-text-container">
+      <div className="home-text-container w-90 md:w-45">
         <div>
           <h2 className="h3-h">Hello </h2>
           <h1 className="h1-h">I'm Pedro Reis</h1>
@@ -24,7 +24,7 @@ const Home = () => {
       </div>
       <div className="home-circle-container">
         <div className="home-circle">
-          <img src="/images/Perfil.jpg" alt="Profile" />
+          <img src="/images/Perfil.jpg" alt="Profile"/>
         </div>
         <div className="tech-icons">
           <img src="/assets/icons/react.svg" alt="React" />

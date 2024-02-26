@@ -2,11 +2,6 @@ import { NavLink } from "react-router-dom";
 
 
 const Topbar = () => {
- 
-
-    // Search Bar 
-      
-
   return (
     <nav className="topbar">
         <img src="/assets/icons/logo.svg" alt="" className="logo"/>
@@ -16,7 +11,6 @@ const Topbar = () => {
           <li><NavLink to="/portfolio">Portfolio</NavLink></li>
           <li><NavLink to="/SocialMedias">Social Medias</NavLink></li>
       </ul>
-        
     </nav>
   );
 };

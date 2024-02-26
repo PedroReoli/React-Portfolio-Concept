@@ -1,1493 +1,162 @@
-@media (max-width: 480px) {
+/*  
+// =================================================================
+                           MEDIA QUERIES
+// =================================================================
+*/
 
-  body {
-    overflow: hidden;
-  }
-      /* ===============================
-      Responsive Topbar 
-     =============================== */
-  
-      .topbar {
-          padding: 1px 0.5%; /* Altera o padding para telas XS */
-        }
-      
-        .logo {
-          width: 120px; /* Reduz o tamanho do logo para telas XS */
-        }
-        ul {
-          margin-right: 20px;
-        }
-        ul li {
-          font-size: 12px; /* Reduz o tamanho do texto dos links para telas XS */
-          margin: 10px 8px; /* Altera as margens dos links para telas XS */
-        }
-        
-        /* ===============================
-        Responsive Home 
-        =============================== */
-        .h3-h {
-          display: none;
-        }
-        .h1-h {
-          font-size: 20px;
-        }
-        .h2-h {
-          /* display: none; */
-          font-size: 13px;
-        }
-        .home-text-container{
-          /* background-color: aliceblue; */
-          top: 25%;
-          left:3%;
-          width: 100px;
-          text-wrap:nowrap;
-        }
-        .h-button {
-          font-size: 10px;
-          display: flex; /* Para ativar o alinhamento vertical e horizontal */
-          justify-content: center; /* Para alinhar horizontalmente */
-          align-items: center; /* Para alinhar verticalmente */
-          padding: 10px 20px; /* Ajuste o padding conforme necessário */
-        }
-        button {
-          height: 10px;
-          
-        }
-       
-        
-        .home-circle {
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 110px;
-          height: auto;
-          border-radius: 50%;
-          left: 70%;
-          top: 10px;
-        }
-        
-        .tech-icons {
-          display: none;
-        }
-      
-    
-        /* ===============================
-        Responsive About
-        =============================== */
-
-  
-           /* Estilos para os títulos */
-           .h1-a {
-            
-            font-size: 20px; /* Reduz o tamanho do título principal */
-            letter-spacing: 3px; /* Ajusta o espaçamento entre as letras */
-          }
-        
-          
-        
-          .h3-a {
-            
-            display: none;
-          }
-       
-      
-        .about-text-container {
-            /* background-color: aliceblue; */
-            width: 180px;
-          top: 20%;
-          left: 40%;
-        }
-        .section-content {
-          
-          position: relative;
-          bottom: 25px;
-        }
-      
-        .section-buttons {
-          /* flex-direction: column; Alinha os botões verticalmente */
-          align-items: center; /* Alinha os botões no centro */
-          margin-top: 20px; /* Adiciona espaço acima dos botões */
-        }
-        .section-image {
-          position: relative;
-          right: 25%;
-          top: 10%;
-          width: 140px;
-          height: auto;
-        }
-       
-        .h-section {
-          display: none;
-        font-size: 8px;
-        
-        }
-        .section-text {
-          /* display: none; */
-          font-size: 5px;
-        }
-        .section-buttons{
-          gap: 20px;
-          
-        }
-        
-        .section-button {
-          width: 80px;
-          font-size: 10px;
-          /* display: none; */
-          margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
-          margin-bottom: 10px; /* Adiciona espaço entre os botões */
-        }
-      
-        .section-button:hover::after {
-          display: none; /* Remove a linha que aparece ao passar o mouse */
-        }
-         /* ===============================
-        Responsive Portfolio
-        =============================== */
-        
-  /* .h2-portfolio */
-  .h2-portfolio {
-  display: none;
-  }
-  .portfolio-container {
-    position: relative;
-    bottom: 120px;
-  }
-  .projects-grid {
-    position: relative;
-    right: 25px;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Defina o tamanho mínimo e máximo das colunas */
-    gap: 30px; /* Ajuste a distância vertical e horizontal entre os itens */
-    padding-top: 100px;
-  }
-  .project-card {
-    /* position: relative; */
-    width: 90px;
-    height: auto;
-  }
-  
-  .project-card h3 {
-    font-size: 8px;
-    position: fixed;
-    width: 80px;
-    right: 5px;
-    top: 20px;  
-  }
-  .project-card p {
-    width: 70px;
-    position: relative;
-    right: 10px;
-  }
-  .p-1 {
-   position: relative;
-   top: 5px;
-    font-size: 6px;
-  }
-  .p-2 {
-    position: relative;
-    bottom: 10px;
-    font-size: 5px;
-  }
-  .a-portfolio {
-  display: none;
-  }
-
-   /* ===============================
-      Responsive Social Medias
-     =============================== */
-     .contact-container{
-      position: relative;
-      right: 45%;
-      top: -15px;
-        }
-     .h2-c {
-      font-size: 20px;
-      position: relative;
-     }
-     .p-contact {
-      /* display: none; */
-      font-size: 8px;
-      position: relative;
-      left: 200px;
-      bottom: 40px;
-     }
-   
-     .social-circle{
-      display: none;
-     }
-     .social-icons {
-      position: relative;
-      left: 50%;
-      top: 50px;
-      
-     }
-      
-  .social-icon {
-    font-size: 40px;
-  }
-
-      
-      }  /*  ESSE É O FINAL */
- 
- 
- 
- 
- 
- /* ===============================
-      
-
-
-EXTRA PEQUENO XS
-
-
-      =============================== */
-@media (max-width: 576px) {
-body {
-  overflow: hidden;
-}
+/*  SMALL   */
+   @media screen and (min-width: 320px) and (max-width:450px) {
     /* ===============================
-    Responsive Topbar 
+    Topbar SMALL =====================
    =============================== */
-
     .topbar {
-        padding: 1px 0.5%; /* Altera o padding para telas XS */
-      }
-    
-      .logo {
-        width: 120px; /* Reduz o tamanho do logo para telas XS */
-      }
-      ul {
-        margin-right: 20px;
-      }
-      ul li {
-        font-size: 12px; /* Reduz o tamanho do texto dos links para telas XS */
-        margin: 10px 8px; /* Altera as margens dos links para telas XS */
-      }
+        width: 100%;
       
-      /* ===============================
-      Responsive Home 
-      =============================== */
-      .h3-h {
-        display: none;
-      }
-      .h1-h {
+
+    }
+    
+    .topbar .logo {
+     display: none;
+    }
+      
+    .topbar a {
         font-size: 20px;
-      }
-      .h2-h {
-        /* display: none; */
-        font-size: 13px;
-      }
-      .home-text-container{
-        /* background-color: aliceblue; */
-        top: 25%;
-        left:3%;
-        width: 100px;
-        text-wrap:nowrap;
-      }
-      .h-button {
-        font-size: 10px;
-        display: flex; /* Para ativar o alinhamento vertical e horizontal */
-        justify-content: center; /* Para alinhar horizontalmente */
-        align-items: center; /* Para alinhar verticalmente */
-        padding: 10px 20px; /* Ajuste o padding conforme necessário */
-      }
-      button {
-        height: 10px;
-        
-      }
-     
-      
-      .home-circle {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 110px;
-        height: auto;
-        border-radius: 50%;
-        left: 70%;
-        top: 10px;
-      }
-      
-      .tech-icons {
-        display: none;
-      }
-    
-  
-      /* ===============================
-      Responsive About
-      =============================== */
+        display: inline-block;
+    }
 
-         /* Estilos para os títulos */
-         .h1-a {
-          
-          font-size: 20px; /* Reduz o tamanho do título principal */
-          letter-spacing: 3px; /* Ajusta o espaçamento entre as letras */
-        }
-      
+    .topbar ul {
+        text-align: center;
+        position: fixed;
+        left: -15%;
+        width: 600px;
         
-      
-        .h3-a {
-          
-          display: none;
-        }
-     
-    
-      .about-text-container {
-          /* background-color: aliceblue; */
-          width: 180px;
-        top: 20%;
-        left: 40%;
-      }
-      .section-content {
         
-        position: relative;
-        bottom: 25px;
-      }
-    
-      .section-buttons {
-        /* flex-direction: column; Alinha os botões verticalmente */
-        align-items: center; /* Alinha os botões no centro */
-        margin-top: 20px; /* Adiciona espaço acima dos botões */
-      }
-      .section-image {
-        position: relative;
-        right: 25%;
-        top: 10%;
-        width: 140px;
-        height: auto;
-      }
-     
-      .h-section {
-        display: none;
-      font-size: 8px;
-      
-      }
-      .section-text {
-        /* display: none; */
-        font-size: 5px;
-      }
-      .section-buttons{
-        gap: 20px;
-        
-      }
-      .section-button {
-        width: 80px;
-        font-size: 10px;
-        /* display: none; */
-        margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
-        margin-bottom: 10px; /* Adiciona espaço entre os botões */
-      }
-    
-      .section-button:hover::after {
-        display: none; /* Remove a linha que aparece ao passar o mouse */
-      }
+    }
+
+    .topbar ul li {
+        display: inline; 
+        margin: 10px 10px;
+    }
+}
+/* MEDIUM  */
+@media (min-width: 768px) and  (max-width: 979px) {
        /* ===============================
-      Responsive Portfolio
-      =============================== */
-      
-/* .h2-portfolio */
-.h2-portfolio {
-display: none;
-}
-.portfolio-container {
-  position: relative;
-  bottom: 120px;
-}
-.projects-grid {
-  position: relative;
-  right: 25px;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Defina o tamanho mínimo e máximo das colunas */
-  gap: 30px; /* Ajuste a distância vertical e horizontal entre os itens */
-  padding-top: 100px;
-}
-.project-card {
-  /* position: relative; */
-  width: 90px;
-  height: auto;
-}
-
-.project-card h3 {
-  font-size: 8px;
-  position: fixed;
-  width: 80px;
-  right: 5px;
-  top: 20px;  
-}
-.project-card p {
-  width: 70px;
-  position: relative;
-  right: 10px;
-}
-.p-1 {
- position: relative;
- top: 5px;
-  font-size: 6px;
-}
-.p-2 {
-  position: relative;
-  bottom: 10px;
-  font-size: 5px;
-}
-.a-portfolio {
-display: none;
-}
-   /* ===============================
-      Responsive Social Medias
-     =============================== */
-     .contact-container{
-      position: relative;
-      right: 45%;
-      top: -15px;
-        }
-     .h2-c {
-      font-size: 20px;
-      position: relative;
-     }
-     .p-contact {
-      /* display: none; */
-      font-size: 8px;
-      position: relative;
-      left: 200px;
-      bottom: 40px;
-     }
-   
-     .social-circle{
-      display: none;
-     }
-     .social-icons {
-      position: relative;
-      left: 50%;
-      top: 50px;
-     }
-
-
-    
-    }  /*  ESSE É O FINAL */
-
- /* ===============================
-      
-
-PEQUENO SM
-
-
-      =============================== */
-  @media (min-width: 576px) and (max-width: 768px) {
-
-    /* ===============================
-    Responsive Topbar 
+    Topbar MEDIUM =======================
    =============================== */
-
     .topbar {
-        padding: 1px 0.5%; /* Altera o padding para telas XS */
-      }
+        width: 100%;
+        
+    }
     
-      .logo {
-        width: 150px; /* Reduz o tamanho do logo para telas XS */
-      }
-    
-      ul li {
-        font-size: 18px; /* Reduz o tamanho do texto dos links para telas XS */
-        margin: 10px 20px; /* Altera as margens dos links para telas XS */
-      }
-  
-      /* ===============================
-      Responsive Home 
-      =============================== */
-      .h3-h {
-        font-size: 12px;
-      }
-      .h1-h {
+    .topbar .logo {
+      width: 200px;
+      position: relative;
+      right: 50px;
+        
+    }
+      
+    .topbar a {
         font-size: 25px;
-      }
-      .h2-h {
-        /* display: none; */
-        font-size: 15px;
-      }
-      .home-text-container{
-        /* background-color: aliceblue; */
-        top: 25%;
-        left:3%;
-        width: 100px;
-        text-wrap:nowrap;
-      }
-      .h-button {
-        font-size: 10px;
-        display: flex; /* Para ativar o alinhamento vertical e horizontal */
-        justify-content: center; /* Para alinhar horizontalmente */
-        align-items: center; /* Para alinhar verticalmente */
-        padding: 10px 20px; /* Ajuste o padding conforme necessário */
-      }
-      button {
-        height: 10px;
-        
-      }
-     
-      
-      .home-circle {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 150px;
-        height: auto;
-        border-radius: 50%;
-        left: 40%;
-        top: 10px;
-      }
-      .tech-icons {
-        position: relative;
-        left: 30%;
-      }
-      .tech-icons img {
-        width: 20px;
-        height: auto;
-       
-      }
-      /* ===============================
-      Responsive About
-      =============================== */
-         /* Estilos para os títulos */
-         .heading-about{
-          
-          padding-top: 10px;
-          
-         }
-         .h1-a {
-          position: relative;
-          bottom: 10px;
-          /* display: none; */
-          font-size: 25px; /* Reduz o tamanho do título principal */
-          letter-spacing: 2px; /* Ajusta o espaçamento entre as letras */
-        }
-      
-        
-      
-        .h3-a {
-          font-size: 10px;
-          /* display: none; */
-        }
-     
-    
-      .about-text-container {
-                  
-          /* display: none; */
-          width: 300px;
-        top: 20%;
-        left: 40%;
-      }
+        display: inline-block;
+    }
 
-      .section-buttons {
-        position: relative;
-        bottom: 25px;
-        /* flex-direction: column; Alinha os botões verticalmente */
-        align-items: center; /* Alinha os botões no centro */
-        margin-top: 20px; /* Adiciona espaço acima dos botões */
-      }
-
-      .section-content {
+    .topbar ul {
+        text-align: center;
+        position: fixed;
+        right: 5%;
+        width: 600px;
         
-        position: relative;
-        bottom: 50px;
-      }
-    
-      .section-image {
-        position: relative;
-        right: 25%;
-        top: 10%;
-        width: 180px;
-        height: auto;
-      }
-     
-      .h-section {
-        display: none;
-      font-size: 8px;
-      
-      }
-      .section-text {
-       
-        /* display: none; */
-
-        font-size: 7px;
-        word-wrap: break-word;
-      }
-      .section-buttons{
-        gap: 20px;
         
-      }
-      .section-button {
-        width: 80px;
-        font-size: 10px;
-        /* display: none; */
-        margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
-        margin-bottom: 10px; /* Adiciona espaço entre os botões */
-      }
+    }
+
+    .topbar ul li {
+        display: inline; 
+        margin: 10px 10px;
+    }
     
-      .section-button:hover::after {
-        display: none; /* Remove a linha que aparece ao passar o mouse */
-      }
-    
+
+}
+
+@media (min-width: 979px) and (max-width: 1204px) { 
        /* ===============================
-      Responsive Portfolio
-      =============================== */
-      
-     
-/* .h2-portfolio */
-.h2-portfolio {
-  display: none;
-  }
-  .portfolio-container {
-    position: relative;
-    bottom: 120px;
-   
-  }
-  .projects-grid {
-    position: relative;
-    right: 25px;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Defina o tamanho mínimo e máximo das colunas */
-    gap: 50px; /* Ajuste a distância vertical e horizontal entre os itens */
-    padding-top: 100px;
-    margin-bottom: -100px; 
-  }
-  .project-card {
-    /* position: relative; */
-    width: 100px;
-    height: auto;
-  }
+    Topbar LARGE BAR ====================
+   =============================== */
+  /* ===============================
+    Topbar 
+   =============================== */
+   .topbar {
+    width: 100%;
+    
+}
+
+.topbar .logo {
+  width: 200px;
+  position: relative;
+  right: 50px;
+    
+}
   
-  .project-card h3 {
-    font-size: 9px;
+.topbar a {
+    font-size: 30px;
+    display: inline-block;
+}
+
+.topbar ul {
+    text-align: center;
     position: fixed;
-    width: 100px;
-    right: -2px;
-    top: 20px;  
-  }
-  .project-card p {
-    width: 70px;
-    position: relative;
-    right: 10px;
-  }
-  .p-1 {
-   position: relative;
-   top: 5px;
-    font-size: 6px;
-  }
-  .p-2 {
-    position: relative;
-    bottom: 10px;
-    font-size: 5px;
-  }
-  .a-portfolio {
-  display: none;
-  }
+    right: 10%;
+    width: 600px;
+    
+    
+}
+
+.topbar ul li {
+    display: inline; 
+    margin: 10px 10px;
+}
+
+
+}
+
+
+@media (min-width: 1204px) and (max-width: 1600px) { 
+   /* ===============================
+    Topbar 
+   =============================== */
      /* ===============================
-      Responsive Social Medias
-     =============================== */
-     .contact-container{
-      position: relative;
-      right: 30%;
-      top: -10px;
-        }
-     .h2-c {
-      font-size: 20px;
-      position: relative;
-      left: 50px;
-     }
-     .p-contact {
-      /* display: none; */
-      font-size: 12px;
-      position: relative;
-      left: 180px;
-      bottom: 40px;
-     }
-   
-     .social-circle{
-      display: none;
-     }
-     .social-icons {
-      position: relative;
-      left:40%;
-      top: 60px;
-     }
-
-      
-      }  /*  ESSE É O FINAL */
-
- /* ===============================
-      
-
-
-MEDIO MD
-
-
-      =============================== */
-  @media (min-width: 768px) and (max-width: 992px) {
-    
-    /* ===============================
-    Responsive Topbar 
+    Topbar 
    =============================== */
+   .topbar {
+    width: 100%;
+}
 
-    .topbar {
-        padding: 2px 0.5%; /* Altera o padding para telas XS */
-      }
+.topbar .logo {
+  width: 300px;
+  position: relative;
+  right: 50px;
     
-      .logo {
-        width: 200px; /* Reduz o tamanho do logo para telas XS */
-      }
-    
-      ul li {
-        font-size: 20px; /* Reduz o tamanho do texto dos links para telas XS */
-        margin: 10px 20px; /* Altera as margens dos links para telas XS */
-      }
-
-      
-      /* ===============================
-      Responsive Home 
-      =============================== */
-      .h3-h {
-        font-size: 12px;
-      }
-      .h1-h {
-        font-size: 30px;
-      }
-      .h2-h {
-        /* display: none; */
-        font-size: 15px;
-      }
-      .home-text-container{
-        /* background-color: aliceblue; */
-        top: 35%;
-        left:3%;
-        width: 100px;
-        text-wrap:nowrap;
-      }
-      .h-button {
-        font-size: 10px;
-        display: flex; /* Para ativar o alinhamento vertical e horizontal */
-        justify-content: center; /* Para alinhar horizontalmente */
-        align-items: center; /* Para alinhar verticalmente */
-        padding: 10px 20px; /* Ajuste o padding conforme necessário */
-      }
-      button {
-        height: 30px;
-        
-      }
-     
-      
-      .home-circle {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 250px;
-        height: auto;
-        border-radius: 50%;
-        left: 30%;
-        top: 10px;
-      }
-      .tech-icons {
-        position: relative;
-        left: 30%;
-      }
-      .tech-icons img {
-        width: 35px;
-        height: auto;
-       
-      }
-    
- 
-      /* ===============================
-      Responsive About
-      =============================== */
-         /* Estilos para os títulos */
-         .heading-about{
-          
-          padding-top: 10px;
-          
-         }
-         .h1-a {
-          position: relative;
-          bottom: 10px;
-          /* display: none; */
-          font-size: 25px; /* Reduz o tamanho do título principal */
-          letter-spacing: 2px; /* Ajusta o espaçamento entre as letras */
-        }
-      
-        
-      
-        .h3-a {
-          font-size: 10px;
-          /* display: none; */
-        }
-     
-    
-      .about-text-container {
-                  
-          /* display: none; */
-          width: 400px;  /* Tamanho do Container sem ser a Imagem*/
-        top: 25%;
-        left: 45%;
-      }
-
-      .section-buttons {
-        position: relative;
-        bottom: 25px;
-        align-items: center; /* Alinha os botões no centro */
-        margin-top: 20px; /* Adiciona espaço acima dos botões */
-      }
-
-      .section-content {
-        
-        position: relative;
-        bottom: 50px;
-      }
-    
-      .section-image {
-        position: relative;
-        right: 25%;
-        top: 10%;
-        width: 280px;
-        height: auto;
-      }
-     
-      .h-section {
-        /* display: none; */
-      font-size: 18px;
-      
-      }
-      .section-text {
-       
-        /* display: none; */
-
-        font-size: 12px; /* Tamnho do texto das sessoes */
-        word-wrap: break-word;
-      }
-      .section-buttons{
-        gap: 20px;
-        
-      }
-      .section-button {
-        width: 80px;
-        font-size: 15px; /* Tamanho da fonte DENTRO do Botão */
-        /* display: none; */
-        margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
-        margin-bottom: 10px; /* Adiciona espaço entre os botões */
-      }
-    
-      .section-button:hover::after {
-        display: none; /* Remove a linha que aparece ao passar o mouse */
-      }
-    
-   /* ===============================
-      Responsive Portfolio  
-      =============================== */
-      
-     
-/* .h2-portfolio */
-.h2-portfolio {
-  display: none;
-  }
-  .portfolio-container {
-    position: relative;
-    bottom: 120px;
-   
-  }
-  .projects-grid {
-    position: relative;
-    left: 20px;
-    grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Defina o tamanho mínimo e máximo das colunas */
-    gap: 1px; /* Ajuste a distância vertical e horizontal entre os itens */
-    padding-top: 100px;
-     
-  }
-  .project-card {
-    position: relative;
-    width: 180px;
-    height: auto;
-  }
+}
   
-  .project-card h3 {
-    font-size: 15px;
-    position: relative;
+.topbar a {
+    font-size: 30px;
+    display: inline-block;
+}
+
+.topbar ul {
+    text-align: center;
+    position: fixed;
+    right: 20%;
+    width: 600px;
     
-    right: 2px;
     
-    bottom: 50px;  
-  }
-  .project-card p {
-    width: 180px;
-    position: relative;
-    right: 20px;
-  }
-  
-  .p-1 {
-   position: relative;
-   bottom: 60px;
+}
 
-    font-size: 11px;
-  }
-  .p-2 {
-    position: relative;
-    bottom: 70px;
-    left: -7px;
-    font-size: 10px;
-    max-width: 150px;
-  }
-  .a-portfolio {
-  display: none;
-  }
-    /* ===============================
-      Responsive Social Medias
-     =============================== */
-     .contact-container{
-      position: relative;
-      right: 20%;
-      top: 10px;
-        }
-     .h2-c {
-      font-size: 20px;
-      position: relative;
-      left: 40px;
-     }
-     .p-contact {
-      /* display: none; */
-      font-size: 20px;
-      position: relative;
-      left: 180px;
-      bottom: 30px;
-     }
-   
-     .social-circle{
-      display: none;
-     }
-     .social-icons {
-      position: relative;
-      left:40px;
-      top: 100px;
-     }
-     .social-icon {
-      font-size: 60px;
-    }
-  
-
-      
-      }  /*  ESSE É O FINAL */
-        
- /* ===============================
-      
+.topbar ul li {
+    display: inline; 
+    margin: 10px 10px;
+}
 
 
-992-1200
 
-      =============================== */
+}
 
-      @media (min-width: 992px) and (max-width: 1200px) {
-
-   /* ===============================
-    Responsive Topbar 
-   =============================== */
-
-    .topbar {
-      padding: 2px 0.5%; /* Altera o padding para telas XS */
-    }
-  
-    .logo {
-      width: 200px; /* Reduz o tamanho do logo para telas XS */
-    }
-  
-    ul li {
-      font-size: 20px; /* Reduz o tamanho do texto dos links para telas XS */
-      margin: 10px 20px; /* Altera as margens dos links para telas XS */
-    }
-
-    
-    /* ===============================
-    Responsive Home 
-    =============================== */
-    .h3-h {
-      font-size: 15px;
-    }
-    .h1-h {
-      font-size: 35px;
-    }
-    .h2-h {
-      /* display: none; */
-      font-size: 18px;
-    }
-    .home-text-container{
-      /* background-color: aliceblue; */
-      top: 35%;
-      left:3%;
-      width: 100px;
-      text-wrap:nowrap;
-    }
-    .h-button {
-      font-size: 10px;
-      display: flex; /* Para ativar o alinhamento vertical e horizontal */
-      justify-content: center; /* Para alinhar horizontalmente */
-      align-items: center; /* Para alinhar verticalmente */
-      padding: 10px 20px; /* Ajuste o padding conforme necessário */
-    }
-    button {
-      height: 35px;
-      
-    }
-   
-    
-    .home-circle {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 300px;
-      height: auto;
-      border-radius: 50%;
-      left: 30%;
-      top: 10px;
-    }
-    .tech-icons {
-      position: relative;
-      left: 30%;
-    }
-    .tech-icons img {
-      width: 35px;
-      height: auto;
-     
-    }
-  
-      /* ===============================
-      Responsive About
-      =============================== */
-         /* Estilos para os títulos */
-         .heading-about{
-          
-          padding-top: 10px;
-          
-         }
-         .h1-a {
-          position: relative;
-          bottom: 10px;
-          /* display: none; */
-          font-size: 35px; /* Reduz o tamanho do título principal */
-          letter-spacing: 2px; /* Ajusta o espaçamento entre as letras */
-        }
-      
-        
-      
-        .h3-a {
-          font-size: 10px;
-          /* display: none; */
-        }
-     
-    
-      .about-text-container {
-                  
-          /* display: none; */
-          width: 400px;  /* Tamanho do Container sem ser a Imagem*/
-        top: 25%;
-        left: 45%;
-      }
-
-      .section-buttons {
-        position: relative;
-        bottom: 25px;
-        align-items: center; /* Alinha os botões no centro */
-        margin-top: 20px; /* Adiciona espaço acima dos botões */
-      }
-
-      .section-content {
-        
-        position: relative;
-        bottom: 50px;
-      }
-    
-      .section-image {
-        position: relative;
-        right: 25%;
-        top: 10%;
-        width: 320px;
-        height: auto;
-      }
-     
-      .h-section {
-        /* display: none; */
-      font-size: 18px;
-      
-      }
-      .section-text {
-       
-        /* display: none; */
-
-        font-size: 12px; /* Tamnho do texto das sessoes */
-        word-wrap: break-word;
-      }
-      .section-buttons{
-        gap: 20px;
-        
-      }
-      .section-button {
-        width: 80px;
-        font-size: 15px; /* Tamanho da fonte DENTRO do Botão */
-        /* display: none; */
-        margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
-        margin-bottom: 10px; /* Adiciona espaço entre os botões */
-      }
-    
-      .section-button:hover::after {
-        display: none; /* Remove a linha que aparece ao passar o mouse */
-      }
-    
-/* ===============================
-      Responsive Portfolio  
-      =============================== */
-      
-     
-/* .h2-portfolio */
-.h2-portfolio {
-  display: none;
-  }
-  .portfolio-container {
-    position: relative;
-    bottom: 120px;
-   
-  }
-  .projects-grid {
-    position: relative;
-    left: 20px;
-    grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Defina o tamanho mínimo e máximo das colunas */
-    gap: 1px; /* Ajuste a distância vertical e horizontal entre os itens */
-    padding-top: 100px;
-     
-  }
-  .project-card {
-    position: relative;
-    width: 180px;
-    height: auto;
-  }
-  
-  .project-card h3 {
-    font-size: 15px;
-    position: relative;
-    
-    right: 2px;
-    
-    bottom: 50px;  
-  }
-  .project-card p {
-    width: 180px;
-    position: relative;
-    right: 20px;
-  }
-  
-  .p-1 {
-   position: relative;
-   bottom: 60px;
-
-    font-size: 11px;
-  }
-  .p-2 {
-    position: relative;
-    bottom: 70px;
-    left: -7px;
-    font-size: 10px;
-    max-width: 150px;
-  }
-  .a-portfolio {
-  display: none;
-  }
-      /* ===============================
-      Responsive Social Medias
-     =============================== */
-     .contact-container{
-      position: relative;
-      right: 15%;
-      top: 10px;
-        }
-     .h2-c {
-      font-size: 20px;
-      position: relative;
-      left: 40px;
-     }
-     .p-contact {
-      /* display: none; */
-      font-size: 20px;
-      position: relative;
-      left: 180px;
-      bottom: 30px;
-     }
-   
-     .social-circle{
-      width: 250px;
-      height: 280px;
-      position: relative;
-      left: 300px;
-      bottom: -30px;
-     }
-     .social-icons {
-      position: relative;
-      left:300px;
-      top: 20px;
-     }
-     .social-icon {
-      font-size: 50px;
-    }
-  
-
-      
-      }  /*  ESSE É O FINAL */
-
-      @media (min-width: 1201px) and (max-width: 1500px) {
-       /* ===============================
-    Responsive Topbar 
-   =============================== */
-
-    .topbar {
-      padding: 2px 0.5%; /* Altera o padding para telas XS */
-    }
-  
-    .logo {
-      width: 200px; /* Reduz o tamanho do logo para telas XS */
-    }
-  
-    ul li {
-      font-size: 20px; /* Reduz o tamanho do texto dos links para telas XS */
-      margin: 10px 20px; /* Altera as margens dos links para telas XS */
-    }
-
-    
-    /* ===============================
-    Responsive Home 
-    =============================== */
-    .h3-h {
-      font-size: 15px;
-    }
-    .h1-h {
-      font-size: 35px;
-    }
-    .h2-h {
-      /* display: none; */
-      font-size: 18px;
-    }
-    .home-text-container{
-      /* background-color: aliceblue; */
-      top: 35%;
-      left:3%;
-      width: 100px;
-      text-wrap:nowrap;
-    }
-    .h-button {
-      font-size: 10px;
-      display: flex; /* Para ativar o alinhamento vertical e horizontal */
-      justify-content: center; /* Para alinhar horizontalmente */
-      align-items: center; /* Para alinhar verticalmente */
-      padding: 10px 20px; /* Ajuste o padding conforme necessário */
-    }
-    button {
-      height: 35px;
-      
-    }
-   
-    
-    .home-circle {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 300px;
-      height: auto;
-      border-radius: 50%;
-      left: 30%;
-      top: 10px;
-    }
-    .tech-icons {
-      position: relative;
-      left: 30%;
-    }
-    .tech-icons img {
-      width: 35px;
-      height: auto;
-     
-    }
-  
-      /* ===============================
-      Responsive About
-      =============================== */
-         /* Estilos para os títulos */
-         .heading-about{
-          
-          padding-top: 10px;
-          
-         }
-         .h1-a {
-          position: relative;
-          bottom: 10px;
-          /* display: none; */
-          font-size: 35px; /* Reduz o tamanho do título principal */
-          letter-spacing: 2px; /* Ajusta o espaçamento entre as letras */
-        }
-      
-        
-      
-        .h3-a {
-          font-size: 10px;
-          /* display: none; */
-        }
-     
-    
-      .about-text-container {
-                  
-          /* display: none; */
-          width: 400px;  /* Tamanho do Container sem ser a Imagem*/
-        top: 25%;
-        left: 45%;
-      }
-
-      .section-buttons {
-        position: relative;
-        bottom: 25px;
-        align-items: center; /* Alinha os botões no centro */
-        margin-top: 20px; /* Adiciona espaço acima dos botões */
-      }
-
-      .section-content {
-        
-        position: relative;
-        bottom: 50px;
-      }
-    
-      .section-image {
-        position: relative;
-        right: 25%;
-        top: 10%;
-        width: 320px;
-        height: auto;
-      }
-     
-      .h-section {
-        /* display: none; */
-      font-size: 18px;
-      
-      }
-      .section-text {
-       
-        /* display: none; */
-
-        font-size: 12px; /* Tamnho do texto das sessoes */
-        word-wrap: break-word;
-      }
-      .section-buttons{
-        gap: 20px;
-        
-      }
-      .section-button {
-        width: 80px;
-        font-size: 15px; /* Tamanho da fonte DENTRO do Botão */
-        /* display: none; */
-        margin-right: 0; /* Remove a margem direita para alinhar os botões verticalmente */
-        margin-bottom: 10px; /* Adiciona espaço entre os botões */
-      }
-    
-      .section-button:hover::after {
-        display: none; /* Remove a linha que aparece ao passar o mouse */
-      }
-    
-/* ===============================
-      Responsive Portfolio  
-      =============================== */
-      
-     
-/* .h2-portfolio */
-.h2-portfolio {
-  display: none;
-  }
-  .portfolio-container {
-    position: relative;
-    bottom: 120px;
-   
-  }
-  .projects-grid {
-    position: relative;
-    left: 20px;
-    grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Defina o tamanho mínimo e máximo das colunas */
-    gap: 1px; /* Ajuste a distância vertical e horizontal entre os itens */
-    padding-top: 100px;
-     
-  }
-  .project-card {
-    position: relative;
-    width: 180px;
-    height: auto;
-  }
-  
-  .project-card h3 {
-    font-size: 15px;
-    position: relative;
-    
-    right: 2px;
-    
-    bottom: 50px;  
-  }
-  .project-card p {
-    width: 180px;
-    position: relative;
-    right: 20px;
-  }
-  
-  .p-1 {
-   position: relative;
-   bottom: 60px;
-
-    font-size: 11px;
-  }
-  .p-2 {
-    position: relative;
-    bottom: 70px;
-    left: -7px;
-    font-size: 10px;
-    max-width: 150px;
-  }
-  .a-portfolio {
-  display: none;
-  }
-      /* ===============================
-      Responsive Social Medias
-     =============================== */
-     .contact-container{
-      position: relative;
-      right: 15%;
-      top: 10px;
-        }
-     .h2-c {
-      font-size: 20px;
-      position: relative;
-      left: 40px;
-     }
-     .p-contact {
-      /* display: none; */
-      font-size: 20px;
-      position: relative;
-      left: 180px;
-      bottom: 30px;
-     }
-   
-     .social-circle{
-      width: 250px;
-      height: 280px;
-      position: relative;
-      left: 300px;
-      bottom: -30px;
-     }
-     .social-icons {
-      position: relative;
-      left:300px;
-      top: 20px;
-     }
-     .social-icon {
-      font-size: 60px;
-    }
-  
-
-      
-      
-      } /*  ESSE É O FINAL */

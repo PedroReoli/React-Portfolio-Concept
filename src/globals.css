@@ -1,9 +1,11 @@
 /* Importação de Fontes */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
-/* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities; */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/screens';
+
 
 /* ===============================
     Body Styles 
@@ -59,6 +61,7 @@ b {
     background: var(--topbarblack);
     padding: 15px 7%;
     z-index: 1000;
+    height: 5rem;
   }
   
   .logo {
@@ -192,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-circle-container {
   position:fixed;
-  left: 65%;
+  right: 10px;;
   top: 55%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -351,10 +354,10 @@ h1, h2, h3, h4, h5, h6 {
    =============================== */
    /* Estilos para a seção Portfolio */
    .portfolio-container {
-    /* background-color: #f0f0f0; */
+    width: 100%;
     padding: 40px 20px;
     text-align: center;
-    
+    box-sizing: border-box;
   }
   
   .h2-portfolio {
@@ -369,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 15px; /* Distancia Vertical */
+    gap:10px;
     padding-top: 100px;
   }
   
@@ -450,6 +453,8 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -583,4 +588,3 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   object-fit: cover;
 }
-

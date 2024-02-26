@@ -6,6 +6,8 @@ import SocialMedias from "@/_root/pages/SocialMedias";
 import { Routes,Route } from 'react-router-dom';
 import './globals.css'
 import './MediaQueries.css'
+
+
 const App = () => {
   return (
     <main className='flex h-screen'>
