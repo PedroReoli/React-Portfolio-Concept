@@ -143,7 +143,24 @@ height: 300px;
 top: 11%;    
 }
 
+/* =================
 
+Portofolio
+=====================*/
+.portoflio-container {
+  width: 100%;
+  display: flex;
+}
+.h2-portfolio {
+  left: 30%;
+}
+.projects-grid {
+  position: relative;
+  right: 10px;
+}
+.project-card {
+  width: 280px;
+}
   /* END */
 }
 /* MEDIUM  */
@@ -288,7 +305,12 @@ height: 88%;
 
 
 }
-
+/* ======================
+Portfolio Medium
+========================*/
+.h2-portfolio {
+  left: 42%;
+}
 
  /* END */
 }
@@ -395,7 +417,7 @@ font-size: 50px;
 
     
 /* ===============================
-    ABOUT Medium =======================
+    ABOUT Laptop =======================
    =============================== */
 .about-container {
     width: 100%;
@@ -580,7 +602,12 @@ left: 0;
 
 
 }
-
+.projects-grid {
+  position: relative;
+  left: -25px;
+   gap:1px;
+ 
+}
 /* END */
 }
 
