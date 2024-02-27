@@ -9,7 +9,7 @@ const SocialMedias = () => {
       <h2 className="h2-c">Contato</h2>
       <p className='p-contact'>
        Este portfolio reflete o desenvolvimento das minhas habilidades e uma breve apresentação sobre mim.
-       Caso tenha interesse, minhas redes sociais à direita compartilham meus projetos e exploram minha jornada como influenciador na programação.
+       Caso tenha interesse, minhas redes sociais estão em disposição para compartilhar projetos e exploram minha jornada como influenciador na programação.
        É uma maneira de divulgar meu trabalho, aprender com a comunidade de desenvolvedores e ficar em contato.
       </p>
       

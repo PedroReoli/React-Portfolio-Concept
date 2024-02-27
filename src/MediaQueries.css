@@ -161,7 +161,46 @@ Portofolio
 .project-card {
   width: 280px;
 }
-  /* END */
+
+/* =================
+
+Social Media
+=====================*/
+.contact-container {
+  width: 100%;
+  height: 100%;
+}
+.h2-c {
+font-size: 25px;
+left: 10px;
+
+}
+.p-contact { 
+  left: 10px;
+  font-size: 15px;
+  width: 90%;
+  top:28%;
+}
+.social-circle-container {
+  position: relative;
+  top: 80px;
+  width: 90%;
+  left: 50%;
+}
+.social-circle {
+  display: none;
+}
+.social-icon{
+  width: 50px;
+  
+}
+.social-circle {
+height: 100px;
+  width: 100px;
+  
+}
+
+/* END */
 }
 /* MEDIUM  */
 @media (min-width: 768px) and  (max-width: 979px) {
@@ -308,10 +347,27 @@ height: 88%;
 /* ======================
 Portfolio Medium
 ========================*/
+.contact-container {
+  width: 100%;
+}
 .h2-portfolio {
   left: 42%;
 }
 
+.social-circle{
+  display: none;
+}
+.p-contact {
+  left: 10px;
+  font-size: 30px;
+  width: 100%; 
+}
+.social-circle-container {
+  position: relative;
+  top:95%;
+  left: 50%;
+  
+}
  /* END */
 }
 @media (min-width: 979px) and (max-width: 1204px) { 
@@ -455,7 +511,29 @@ height: 88%;
 
 
 }
+/* ======================
+Portfolio Medium
+========================*/
+.contact-container {
+  width: 100%;
+}
 
+
+.social-circle{
+  width: 350px;
+  height: 450px;
+}
+.p-contact {
+  left: 10px;
+  font-size: 28px;
+  width: 600px; 
+}
+.social-circle-container {
+  position: relative;
+  width: 350px;
+  left: 80%;
+  
+}
 /* END */
 }
 
@@ -608,9 +686,31 @@ left: 0;
    gap:1px;
  
 }
-/* END */
+/* ======================
+Social Laptop
+========================*/
+.contact-container {
+  width: 100%;
 }
 
+
+.social-circle{
+  width: 450px;
+  height: 550px;
+}
+.p-contact {
+  left: 10px;
+  font-size: 35px;
+  width: 800px; 
+}
+.social-circle-container {
+  position: relative;
+  width: 500px;
+  left: 80%;
+  
+}
+/* END */
+}
 
 
 @media (min-width: 1600px) and (max-width: 2004px) 
