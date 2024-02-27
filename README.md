@@ -14,4 +14,4 @@ O **Peoplelly** é construído com as seguintes tecnologias:
 - **React (Vite-React):** Utilizando uma abordagem moderna para interfaces de usuário eficientes.
 - **Typescript:** Promovendo um desenvolvimento mais seguro e escalável.
 - **HTML e CSS:** Fundamentais para a estrutura e estilo do aplicativo.
-- **Bibliotecas de CSS:** Tailwind e Shadcn, garantindo uma estilização eficaz e moderna.
+
