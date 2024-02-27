@@ -5,8 +5,8 @@ const Portfolio = () => {
       title: 'Peoplelly',
       description: ` ''Peoplelly'' é um aplicativo que conecta pessoas por meio de eventos, incentivando interações sociais e diversão.`,
       technologies: ['React', 'Tailwind.CSS','SQL','AppWrite'],
-      image: '/images/project2.jpg',
-      link: 'https://example.com/project1',
+      image: '/images/projeto-peoplelly.svg',
+      link: 'https://peoplelly.netlify.app',
     },
     {
       title: 'Musicianist',
