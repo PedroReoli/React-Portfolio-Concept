@@ -58,7 +58,7 @@ const About = () => {
               <h2 className='h-section'>Education Section</h2>
               <p className='section-text'>Estou no 5º período do curso de Sistemas de Informação na UNIFOA.
                 Minha busca por conhecimento e aprimoramento é constante, utilizando
-                tecnologias como <b>HTML, CSS, JavaScript, TypeScript, Vite, React, SQL
+                tecnologias como <b>HTML, CSS, JavaScript, TypeScript, Vite, React, React Native, SQL, C# ,
                 Python e AppWrite.</b></p>
             </div>
           )}

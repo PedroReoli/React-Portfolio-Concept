@@ -14,7 +14,7 @@ const Home = () => {
         <div>
           <h2 className="h3-h">Hello </h2>
           <h1 className="h1-h">I'm Pedro Reis</h1>
-          <h2 className="h2-h">Web Dev</h2>
+          <h2 className="h2-h">Dev Junior</h2>
         </div>
         <div className="container-button">
             <button className="h-button" onClick={handleDownloadCV}>
@@ -34,8 +34,8 @@ const Home = () => {
           <img src="/assets/icons/css.svg" alt="CSS" />
           <img src="/assets/icons/sql.svg" alt="SQL" />
           {/* Atualmente estou estudando as linguagens abaixo,quando eu estiver num nivel mais elevado...estarao no Oficial */}
-          {/* <img src="/assets/icons/python.svg" alt="Python" /> */}
-          {/* <img src="/assets/icons/c-sharp.svg" alt="C#" /> */}
+          <img src="/assets/icons/python.svg" alt="Python" />
+          <img src="/assets/icons/c-sharp.svg" alt="C#" />
         </div>
       </div>
     </div>
