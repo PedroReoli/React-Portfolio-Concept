@@ -25,7 +25,7 @@ const SocialMedias = () => {
           <NavLink to="https://github.com/PedroReoli" className="social-icon" target="_blank">
             <FaGithub />
           </NavLink>
-          <NavLink to="https://www.linkedin.com/in/pedro-reis-a93945171/" className="social-icon" target="_blank">
+          <NavLink to="https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/" className="social-icon" target="_blank">
             <FaLinkedin />
           </NavLink>
           <NavLink to="https://www.youtube.com/@DevDesenvolvimento" className="social-icon" target="_blank" >

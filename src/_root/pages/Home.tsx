@@ -27,15 +27,15 @@ const Home = () => {
           <img src="/images/Perfil.jpg" alt="Profile"/>
         </div>
         <div className="tech-icons">
-          <img src="/assets/icons/react.svg" alt="React" />
+          <img src="/assets/icons/c-sharp.svg" alt="C#" />
           <img src="/assets/icons/ts.svg" alt="Typescript" />
           <img src="/assets/icons/js.svg" alt="JavaScript" />
-          <img src="/assets/icons/html5.svg" alt="HTML" />
-          <img src="/assets/icons/css.svg" alt="CSS" />
           <img src="/assets/icons/sql.svg" alt="SQL" />
+          <img src="/assets/icons/css.svg" alt="CSS" />
+          <img src="/assets/icons/react.svg" alt="React" />
+          <img src="/assets/icons/html5.svg" alt="HTML" />
           {/* Atualmente estou estudando as linguagens abaixo,quando eu estiver num nivel mais elevado...estarao no Oficial */}
-          <img src="/assets/icons/python.svg" alt="Python" />
-          <img src="/assets/icons/c-sharp.svg" alt="C#" />
+          {/* <img src="/assets/icons/python.svg" alt="Python" /> */}
         </div>
       </div>
     </div>
