@@ -58,17 +58,15 @@ const About = () => {
               <h2 className='h-section'>Education Section</h2>
               <p className='section-text'>Estou no 5º período do curso de Sistemas de Informação na UNIFOA.
                 Minha busca por conhecimento e aprimoramento é constante, utilizando
-                tecnologias como <b>HTML, CSS, JavaScript, TypeScript, Vite, React, React Native, SQL, C# ,
+                tecnologias como <b> C# ,HTML, CSS, JavaScript, TypeScript, Vite, React, React Native, SQL,
                 Python e AppWrite.</b></p>
             </div>
           )}
           {activeSection === 'Experience' && (
             <div>
               <h2 className='h-section'>Experience Section</h2>
-              <p className='section-text'>Participei de projetos significativos,
-              como Coordenador Estudantil na <b>Sala+Verde da UNIFOA</b>, desenvolvendo sites responsivos.
-              Na <b>"Game Jam UNIFOA"</b>, atuei como Líder Estudantil, ministrando palestras
-              e orientando em desenvolvimento de jogos e modelos de personagens.</p>
+              <p className='section-text'>Fui Coordenador Estudantil na <b>Sala+Verde da UNIFOA</b>, desenvolvendo sites responsivos. Na <b>Game Jam UNIFOA</b>, 
+              liderei palestras e orientei no desenvolvimento de jogos. Atualmente, estou em um projeto social para qualificar e dar mentoria a mães negras solteiras.</p>
             </div>
           )}
         </div>
